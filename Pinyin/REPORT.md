@@ -22,6 +22,9 @@ Pinyin/Hand-in/
 │  README.md
 │
 ├─data
+│  │  input.txt
+│  │  output.txt
+│  │
 │  ├─lexicon
 │  │      1st_2nd_order_characters.txt
 │  │      pinyin2word.json
@@ -36,10 +39,10 @@ Pinyin/Hand-in/
 │  │      2016-09.txt
 │  │      2016-10.txt
 │  │      2016-11.txt
-│  │      README.txt
-│  │      uni_word_count.json
 │  │      bi_word_count.json
+│  │      README.txt
 │  │      tri_word_count.json
+│  │      uni_word_count.json
 │  │
 │  └─std_data
 │          std_input.txt
@@ -118,36 +121,15 @@ def get_pinyin2word():
 }
 ```
 
-整体的思路是，首先利用语料库文件里的**非汉字字符**作为自然的分隔符，将整个语料切割为很多的语段，存入 `segments` 这一字符串列表中。紧接着，对于每个长度为 $i \quad (i = 1, 2, 3)$ 的字符串，在 `word_pair_counter[i]` 中更新其出现次数。代码实现如下：
-
-```python
-def count_word_pairs(text):
-    # 使用正则表达式找到非汉字字符并将其作为分隔符
-    delimiter_pattern = re.compile(r'[^\u4e00-\u9fa5]+')
-    segments = delimiter_pattern.split(text)
-
-    word_pairs_counter = [Counter() for _ in range(4)]
-    for segment in segments:
-        # 去除空字符串
-        segment = segment.strip()
-        if not segment:
-            continue
-
-        # 截取长度为 i 的字符串
-        for i in range(1, 4):
-            for j in range(len(segment) - i + 1):
-                # 在 word_pair_counter[i] 中更新其出现次数
-                word_pairs_counter[i][segment[j:j + i]] += 1
-    return word_pairs_counter
-```
+整体的思路是，首先利用语料库文件里的**非汉字字符**作为自然的分隔符，将整个语料切割为很多的语段，存入 `segments` 这一字符串列表中。紧接着，对于每个长度为 $i \quad (i = 1, 2, 3)$ 的字符串，更新其出现次数。
 
 对于语料库中的多文件而言，枚举每个文件的文件名并分别对每个文件进行统计，统计数据累加即可得到整个语料库中所有的一元、二元和三元词的出现次数。代码实现如下：
 
 ```python
 def get_word_count():
-    uni_word_counter = Counter()
-    bi_word_counter = Counter()
-    tri_word_counter = Counter()
+    uni_word_counter = defaultdict(int)
+    bi_word_counter = defaultdict(int)
+    tri_word_counter = defaultdict(int)
 
     # 枚举每个文件的文件名
     for i in tqdm(range(4, 12)):
@@ -155,29 +137,35 @@ def get_word_count():
             for line in tqdm(file):
                 try:
                     data = json.loads(line).get('html', "")
-                    
-                    # 统计一元、二元和三元词的出现次数
-                    processed_data = count_word_pairs(data)
-                    uni_word_counter += Counter(
-                        {word: count for word, count in processed_data[1].items()})
-                    bi_word_counter += Counter(
-                        {word: count for word, count in processed_data[2].items()})
-                    tri_word_counter += Counter(
-                        {word: count for word, count in processed_data[3].items()})
+
+                    delimiter_pattern = re.compile(r'[^\u4e00-\u9fa5]+')
+                    segments = delimiter_pattern.split(data)
+
+                    for segment in segments:
+                        # 去除空字符串
+                        segment = segment.strip()
+                        if not segment:
+                            continue
+
+                        # 截取长度为 1 的字符串
+                        for j in range(len(segment)):
+                            uni_word_counter[segment[j:j + 1]] += 1
+                        # 截取长度为 2 的字符串
+                        for j in range(len(segment) - 1):
+                            bi_word_counter[segment[j:j + 2]] += 1
+                        # 截取长度为 3 的字符串
+                        for j in range(len(segment) - 2):
+                            tri_word_counter[segment[j:j + 3]] += 1
                 except:
                     pass
 
-    uni_word_counter_dict = dict(uni_word_counter)
-    bi_word_counter_dict = dict(bi_word_counter)
-    tri_word_counter_dict = dict(tri_word_counter)
-
     # 将字典写入到 JSON 文件中
     with open("../data/sina_news_gbk/uni_word_count.json", "w", encoding="utf-8") as json_file:
-        json.dump(uni_word_counter_dict, json_file, ensure_ascii=False, indent=4)
+        json.dump(uni_word_counter, json_file, ensure_ascii=False, indent=4)
     with open("../data/sina_news_gbk/bi_word_count.json", "w", encoding="utf-8") as json_file:
-        json.dump(bi_word_counter_dict, json_file, ensure_ascii=False, indent=4)
+        json.dump(bi_word_counter, json_file, ensure_ascii=False, indent=4)
     with open("../data/sina_news_gbk/tri_word_count.json", "w", encoding="utf-8") as json_file:
-        json.dump(tri_word_counter_dict, json_file, ensure_ascii=False, indent=4)
+        json.dump(tri_word_counter, json_file, ensure_ascii=False, indent=4)
 ```
 
 ## 基于字的二元、三元模型的拼音输入法
@@ -418,11 +406,11 @@ if __name__ == '__main__':
 
 |     评价指标     |       二元模型       |       三元模型       |
 | :--------------: | :------------------: | :------------------: |
-|     句准确率     |      $38.72\%$       |      $43.11\%$       |
-|     字准确率     |      $83.99\%$       |      $86.41\%$       |
-|    训练时长*     |  $5.5\;\mathrm{h}$   |  $5.5\;\mathrm{h}$   |
-| 平均单次响应时长 | $0.0187\;\mathrm{s}$ | $0.5909\;\mathrm{s}$ |
-|    总响应时长    | $9.358\;\mathrm{s}$  | $296.1\;\mathrm{s}$  |
+|     句准确率     |      $38.92\%$       |      $46.51\%$       |
+|     字准确率     |      $83.72\%$       |      $87.53\%$       |
+|    训练时长*     | $10.5\;\mathrm{min}$ | $10.5\;\mathrm{min}$ |
+| 平均单次响应时长 | $0.0135\;\mathrm{s}$ | $0.5909\;\mathrm{s}$ |
+|    总响应时长    | $6.801\;\mathrm{s}$  | $296.1\;\mathrm{s}$  |
 
 > *训练时长（指预处理数据所用时长）由对数据预处理程序（`./src/preprocess.py`）单独测试而得。
 
@@ -488,23 +476,23 @@ if __name__ == '__main__':
 
 #### 平滑处理参数
 
-平滑处理的参数 $\lambda$ 可以有不同取值，$\lambda$ 越大，表明认为不存在某个词 $AB$ 的情况下，$A$ 恰为上个词的结尾，$B$ 恰为下个词的开头的概率越低。对于二元模型而言，在不同 $\lambda$ 下的测试结果如下：
+平滑处理的参数 $\lambda$ 可以有不同取值，$\lambda$ 越大，表明认为不存在某个词 $AB$ 的情况下，$A$ 恰为上个词的结尾，$B$ 恰为下个词的开头的概率越低。对于二元模型而言，在不同 $\lambda$ 下的测试结果如下（$k = 1$）：
 
 | 评价指标 | $\lambda = 0.9$ | $\lambda = 0.8$ | $\lambda = 0.95$ |
 | :------: | :-------------: | :-------------: | :--------------: |
-| 句准确率 |    $38.72\%$    |    $37.92\%$    |    $38.32\%$     |
-| 字准确率 |    $83.99\%$    |    $83.86\%$    |    $83.94\%$     |
+| 句准确率 |    $38.92\%$    |    $37.72\%$    |    $38.72\%$     |
+| 字准确率 |    $83.72\%$    |    $83.61\%$    |    $83.64\%$     |
 
 经过测试，$\lambda = 0.9$ 的效果最佳。这说明在 $\lambda$ 适中的情况下，能够兼顾二字词出现次数以及前后两个词的连接。
 
 #### 预处理中的词频阈值
 
-在对数据预处理的过程中，会有很多出现次数过少的无用词，而它们可能会对最终结果产生影响。因此，我们可以考虑删去出现次数过低的词语。假设删去出现次数小于等于 $k$ 的词语。对于三元模型而言，在不同 $k$ 下的测试结果如下：
+在对数据预处理的过程中，会有很多出现次数过少的无用词，而它们可能会对最终结果产生影响。因此，我们可以考虑删去出现次数过低的词语。假设删去出现次数小于等于 $k$ 的词语。对于三元模型而言，在不同 $k$ 下的测试结果如下（$\lambda = 0.9$）：
 
-| 评价指标 |  $k = 0$  |  $k = 1$  |  $k = 5$  |
+| 评价指标 |  $k = 1$  |  $k = 0$  |  $k = 5$  |
 | :------: | :-------: | :-------: | :-------: |
-| 句准确率 | $43.11\%$ | $46.30\%$ | $43.51\%$ |
-| 字准确率 | $86.41\%$ | $87.33\%$ | $86.55\%$ |
+| 句准确率 | $46.51\%$ | $42.91\%$ | $42.32\%$ |
+| 字准确率 | $87.53\%$ | $86.22\%$ | $86.65\%$ |
 
 经过测试，$k = 1$ 的效果最佳。这说明在 $k$ 合适的情况下，能够除去大多数无用词汇的同时，保证出现次数较低的有意义的词汇并不被舍去。
 
@@ -526,7 +514,7 @@ if __name__ == '__main__':
 
 测试集中每条测试数据的 $n$ 约为 $8$ 左右，整个语料数据集中 $m$ 约为 $25$，$K$ 约为 $4 \times 10^6$。假设电脑 $1\;\mathrm{s}$ 可以进行 $10^8$ 次运算：
 
-- 二元模型平均单次响应时长约为 $\dfrac{8 \times 25^2 \times \ln^2 25 \times \ln(4\times 10^6)}{10^8} \approx 0.0079\;\mathrm{s}$，与实际测得的 $0.0187\;\mathrm{s}$ 较为接近；
+- 二元模型平均单次响应时长约为 $\dfrac{8 \times 25^2 \times \ln^2 25 \times \ln(4\times 10^6)}{10^8} \approx 0.0079\;\mathrm{s}$，与实际测得的 $0.0135\;\mathrm{s}$ 较为接近；
 - 三元模型平均单次响应时长约为 $\dfrac{8 \times 25^3 \times \ln^3 25 \times \ln(4\times 10^6)}{10^8} \approx 0.6337\;\mathrm{s}$，与实际测得的 $0.5909\;\mathrm{s}$ 较为接近。
 
 ## 感受及建议

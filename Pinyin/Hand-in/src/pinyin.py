@@ -8,7 +8,7 @@ pinyin2word = {}
 word_count = [{} for _ in range(4)]
 
 my_k = 1
-my_lambda = 0.9
+my_lambda = 0.95
 total_number = 0
 
 
@@ -115,7 +115,7 @@ if __name__ == '__main__':
 
     word_count[1] = load_list_from_json('../data/sina_news_gbk/uni_word_count.json')
     word_count[2] = load_list_from_json('../data/sina_news_gbk/bi_word_count.json')
-    word_count[3] = load_list_from_json('../data/sina_news_gbk/tri_word_count.json')
+    # word_count[3] = load_list_from_json('../data/sina_news_gbk/tri_word_count.json')
 
     keys_to_delete = []
     for idx in range(1, 4):
@@ -140,8 +140,8 @@ if __name__ == '__main__':
         start_time = time.time()
 
         # 使用二元模型或三元模型
-        # solve(input_line.split(), 2)
-        solve(input_line.split(), 3)
+        solve(input_line.split(), 2)
+        # solve(input_line.split(), 3)
         end_time = time.time()
 
         total_response_time += end_time - start_time

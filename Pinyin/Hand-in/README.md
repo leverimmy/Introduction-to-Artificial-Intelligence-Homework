@@ -9,6 +9,9 @@ Pinyin/Hand-in/
 │  README.md
 │
 ├─data
+│  │  input.txt
+│  │  output.txt
+│  │
 │  ├─lexicon
 │  │      1st_2nd_order_characters.txt
 │  │      pinyin2word.json
@@ -23,10 +26,10 @@ Pinyin/Hand-in/
 │  │      2016-09.txt
 │  │      2016-10.txt
 │  │      2016-11.txt
-│  │      README.txt
-│  │      uni_word_count.json
 │  │      bi_word_count.json
+│  │      README.txt
 │  │      tri_word_count.json
+│  │      uni_word_count.json
 │  │
 │  └─std_data
 │          std_input.txt
@@ -50,7 +53,7 @@ Pinyin/Hand-in/
   py ./preprocess.py
   ```
 
-  该命令将重新生成 `uni_word_count.json`、`bi_word_count.json` 和 `tri_word_count.json`，预计完成时间为 $5$ 个小时。**请谨慎使用。**
+  该命令将重新生成 `uni_word_count.json`、`bi_word_count.json` 和 `tri_word_count.json`，预计完成时间为 $10.5$ 分钟。
 
 - 对测试集进行测试：
 

@@ -1,6 +1,6 @@
 import json
 import re
-from collections import Counter
+from collections import defaultdict
 from tqdm import tqdm
 
 
@@ -14,61 +14,47 @@ def get_pinyin2word():
         json.dump(pinyin2word_mapping, json_file, ensure_ascii=False, indent=4)
 
 
-def count_word_pairs(text):
-    # Ê¹ÓÃÕıÔò±í´ïÊ½ÕÒµ½·Çºº×Ö×Ö·û²¢½«Æä×÷Îª·Ö¸ô·û
-    delimiter_pattern = re.compile(r'[^\u4e00-\u9fa5]+')
-    segments = delimiter_pattern.split(text)
-
-    word_pairs_counter = [Counter() for _ in range(4)]
-    for segment in segments:
-        # È¥³ı¿Õ×Ö·û´®
-        segment = segment.strip()
-        if not segment:
-            continue
-
-        # ½ØÈ¡³¤¶ÈÎª i µÄ×Ö·û´®
-        for i in range(1, 4):
-            for j in range(len(segment) - i + 1):
-                # ÔÚ word_pair_counter[i] ÖĞ¸üĞÂÆä³öÏÖ´ÎÊı
-                word_pairs_counter[i][segment[j:j + i]] += 1
-    return word_pairs_counter
-
-
 def get_word_count():
-    uni_word_counter = Counter()
-    bi_word_counter = Counter()
-    tri_word_counter = Counter()
+    uni_word_counter = defaultdict(int)
+    bi_word_counter = defaultdict(int)
+    tri_word_counter = defaultdict(int)
 
-    # Ã¶¾ÙÃ¿¸öÎÄ¼şµÄÎÄ¼şÃû
+    # æšä¸¾æ¯ä¸ªæ–‡ä»¶çš„æ–‡ä»¶å
     for i in tqdm(range(4, 12)):
         with open(f'../data/sina_news_gbk/2016-{str(i).zfill(2)}.txt', 'r', encoding='gbk') as file:
             for line in tqdm(file):
                 try:
                     data = json.loads(line).get('html', "")
 
-                    # Í³¼ÆÒ»Ôª¡¢¶şÔªºÍÈıÔª´ÊµÄ³öÏÖ´ÎÊı
-                    processed_data = count_word_pairs(data)
-                    uni_word_counter += Counter(
-                        {word: count for word, count in processed_data[1].items()})
-                    bi_word_counter += Counter(
-                        {word: count for word, count in processed_data[2].items()})
-                    tri_word_counter += Counter(
-                        {word: count for word, count in processed_data[3].items()})
+                    delimiter_pattern = re.compile(r'[^\u4e00-\u9fa5]+')
+                    segments = delimiter_pattern.split(data)
+
+                    for segment in segments:
+                        # å»é™¤ç©ºå­—ç¬¦ä¸²
+                        segment = segment.strip()
+                        if not segment:
+                            continue
+
+                        # æˆªå–é•¿åº¦ä¸º 1 çš„å­—ç¬¦ä¸²
+                        for j in range(len(segment)):
+                            uni_word_counter[segment[j:j + 1]] += 1
+                        # æˆªå–é•¿åº¦ä¸º 2 çš„å­—ç¬¦ä¸²
+                        for j in range(len(segment) - 1):
+                            bi_word_counter[segment[j:j + 2]] += 1
+                        # æˆªå–é•¿åº¦ä¸º 3 çš„å­—ç¬¦ä¸²
+                        for j in range(len(segment) - 2):
+                            tri_word_counter[segment[j:j + 3]] += 1
                 except:
                     pass
 
-    uni_word_counter_dict = dict(uni_word_counter)
-    bi_word_counter_dict = dict(bi_word_counter)
-    tri_word_counter_dict = dict(tri_word_counter)
-
-    # ½«×ÖµäĞ´Èëµ½ JSON ÎÄ¼şÖĞ
+    # å°†å­—å…¸å†™å…¥åˆ° JSON æ–‡ä»¶ä¸­
     with open("../data/sina_news_gbk/uni_word_count.json", "w", encoding="utf-8") as json_file:
-        json.dump(uni_word_counter_dict, json_file, ensure_ascii=False, indent=4)
+        json.dump(uni_word_counter, json_file, ensure_ascii=False, indent=4)
     with open("../data/sina_news_gbk/bi_word_count.json", "w", encoding="utf-8") as json_file:
-        json.dump(bi_word_counter_dict, json_file, ensure_ascii=False, indent=4)
+        json.dump(bi_word_counter, json_file, ensure_ascii=False, indent=4)
     with open("../data/sina_news_gbk/tri_word_count.json", "w", encoding="utf-8") as json_file:
-        json.dump(tri_word_counter_dict, json_file, ensure_ascii=False, indent=4)
+        json.dump(tri_word_counter, json_file, ensure_ascii=False, indent=4)
 
 
-get_pinyin2word()  # »ñÈ¡ pinyin2word.json
-get_word_count()  # »ñÈ¡ uni_word_count.json, bi_word_count.json, tri_word_count.json
+get_pinyin2word()  # è·å– pinyin2word.json
+get_word_count()  # è·å– uni_word_count.json, bi_word_count.json, tri_word_count.json
