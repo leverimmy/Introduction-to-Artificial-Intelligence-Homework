@@ -1,5 +1,6 @@
 import subprocess
 
+
 result = subprocess.run("py ./pinyin.py < ../data/std_data/std_input.txt > test_output.txt",
                         shell=True, capture_output=True, text=True)
 
@@ -25,10 +26,12 @@ for my_sentence, std_sentence in zip(my_file, std_file):
     if my_sentence == std_sentence:
         accepted_sentence_count += 1
     else:
-        print(f'<{my_sentence} != {std_sentence}>')
+        print(f'<{my_sentence}> != <{std_sentence}>')
     for my_character, std_character in zip(my_sentence, std_sentence):
         if my_character == std_character:
             accepted_character_count += 1
 
-print(f'句正确率：{accepted_sentence_count / total_sentence_count * 100} %')
-print(f'字正确率：{accepted_character_count / total_character_count * 100} %')
+print(f'句正确率：{accepted_sentence_count / total_sentence_count * 100}%')
+print(f'字正确率：{accepted_character_count / total_character_count * 100}%')
+print(f'平均单次响应时长：{float(result.stderr) / total_sentence_count} 秒')
+print(f'总响应时长：{result.stderr} 秒')

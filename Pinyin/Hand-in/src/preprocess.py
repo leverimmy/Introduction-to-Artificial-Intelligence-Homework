@@ -29,6 +29,7 @@ def count_word_pairs(text):
         # 截取长度为 i 的字符串
         for i in range(1, 4):
             for j in range(len(segment) - i + 1):
+                # 在 word_pair_counter[i] 中更新其出现次数
                 word_pairs_counter[i][segment[j:j + i]] += 1
     return word_pairs_counter
 
@@ -38,13 +39,15 @@ def get_word_count():
     bi_word_counter = Counter()
     tri_word_counter = Counter()
 
+    # 枚举每个文件的文件名
     for i in tqdm(range(4, 12)):
         with open(f'../data/sina_news_gbk/2016-{str(i).zfill(2)}.txt', 'r', encoding='gbk') as file:
             for line in tqdm(file):
                 try:
                     data = json.loads(line).get('html', "")
-                    processed_data = count_word_pairs(data)
 
+                    # 统计一元、二元和三元词的出现次数
+                    processed_data = count_word_pairs(data)
                     uni_word_counter += Counter(
                         {word: count for word, count in processed_data[1].items()})
                     bi_word_counter += Counter(
