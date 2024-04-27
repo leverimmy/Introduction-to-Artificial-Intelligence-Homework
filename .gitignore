@@ -3,3 +3,7 @@
 
 # Pinyin
 Pinyin/Hand-in/data/*
+
+# Classification
+Classification/src/__pycache__/
+Classification/src/wandb/
