@@ -1,0 +1,22 @@
+
+
+ 10%|█         | 1/10 [00:35<05:19, 35.46s/it]
+for epoch 1, train_loss: 0.5225, train_acc: 0.7360, val_loss: 0.4133, val_acc: 0.8152, test_loss: 0.4039, test_acc: 0.8293
+
+ 20%|██        | 2/10 [01:12<04:49, 36.20s/it]
+
+
+ 40%|████      | 4/10 [02:37<03:59, 39.97s/it]
+for epoch 4, train_loss: 0.1454, train_acc: 0.9502, val_loss: 0.3917, val_acc: 0.8431, test_loss: 0.3842, test_acc: 0.8564
+
+
+ 60%|██████    | 6/10 [04:10<02:54, 43.54s/it]
+for epoch 6, train_loss: 0.0410, train_acc: 0.9913, val_loss: 0.4573, val_acc: 0.8419, test_loss: 0.4536, test_acc: 0.8482
+
+ 70%|███████   | 7/10 [05:14<02:31, 50.42s/it]
+
+ 80%|████████  | 8/10 [06:21<01:50, 55.50s/it]
+
+
+100%|██████████| 10/10 [07:52<00:00, 47.21s/it]
+for epoch 10, train_loss: 0.0281, train_acc: 0.9942, val_loss: 0.4969, val_acc: 0.8414, test_loss: 0.4791, test_acc: 0.8482
