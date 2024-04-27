@@ -1,0 +1,263 @@
+2024-04-27 21:11:21,364 INFO    StreamThr :885744 [internal.py:wandb_internal():86] W&B internal server running at pid: 885744, started at: 2024-04-27 21:11:21.363642
+2024-04-27 21:11:21,367 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: status
+2024-04-27 21:11:21,372 INFO    WriterThread:885744 [datastore.py:open_for_write():87] open: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/run-ibon0p5h.wandb
+2024-04-27 21:11:21,373 DEBUG   SenderThread:885744 [sender.py:send():379] send: header
+2024-04-27 21:11:21,398 DEBUG   SenderThread:885744 [sender.py:send():379] send: run
+2024-04-27 21:11:22,523 INFO    SenderThread:885744 [dir_watcher.py:__init__():211] watching files in: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files
+2024-04-27 21:11:22,523 INFO    SenderThread:885744 [sender.py:_start_run_threads():1124] run started: ibon0p5h with start time 1714223481.363195
+2024-04-27 21:11:22,537 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: check_version
+2024-04-27 21:11:22,538 DEBUG   SenderThread:885744 [sender.py:send_request():406] send_request: check_version
+2024-04-27 21:11:23,098 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: run_start
+2024-04-27 21:11:23,120 DEBUG   HandlerThread:885744 [system_info.py:__init__():26] System info init
+2024-04-27 21:11:23,120 DEBUG   HandlerThread:885744 [system_info.py:__init__():41] System info init done
+2024-04-27 21:11:23,120 INFO    HandlerThread:885744 [system_monitor.py:start():194] Starting system monitor
+2024-04-27 21:11:23,121 INFO    SystemMonitor:885744 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-04-27 21:11:23,121 INFO    HandlerThread:885744 [system_monitor.py:probe():214] Collecting system info
+2024-04-27 21:11:23,122 INFO    SystemMonitor:885744 [interfaces.py:start():190] Started cpu monitoring
+2024-04-27 21:11:23,123 INFO    SystemMonitor:885744 [interfaces.py:start():190] Started disk monitoring
+2024-04-27 21:11:23,124 INFO    SystemMonitor:885744 [interfaces.py:start():190] Started gpu monitoring
+2024-04-27 21:11:23,126 INFO    SystemMonitor:885744 [interfaces.py:start():190] Started memory monitoring
+2024-04-27 21:11:23,127 INFO    SystemMonitor:885744 [interfaces.py:start():190] Started network monitoring
+2024-04-27 21:11:23,204 DEBUG   HandlerThread:885744 [system_info.py:probe():150] Probing system
+2024-04-27 21:11:23,207 DEBUG   HandlerThread:885744 [system_info.py:_probe_git():135] Probing git
+2024-04-27 21:11:23,215 DEBUG   HandlerThread:885744 [system_info.py:_probe_git():143] Probing git done
+2024-04-27 21:11:23,215 DEBUG   HandlerThread:885744 [system_info.py:probe():198] Probing system done
+2024-04-27 21:11:23,215 DEBUG   HandlerThread:885744 [system_monitor.py:probe():223] {'os': 'Linux-5.4.0-149-generic-x86_64-with-glibc2.31', 'python': '3.11.5', 'heartbeatAt': '2024-04-27T13:11:23.204619', 'startedAt': '2024-04-27T13:11:21.350332', 'docker': None, 'cuda': None, 'args': ('-b', '50'), 'state': 'running', 'program': '/home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/main.py', 'codePathLocal': 'main.py', 'codePath': 'Classification/src/main.py', 'git': {'remote': 'https://github.com/LeverImmy/Introduction-to-Artificial-Intelligence.git', 'commit': 'dfed92e642a622bf81d7af1ad5a3357c574d50f0'}, 'email': None, 'root': '/home/leverimmy/documents/Introduction-to-Artificial-Intelligence', 'host': 'host-4-3090', 'username': 'leverimmy', 'executable': '/home/leverimmy/anaconda3/bin/python', 'cpu_count': 36, 'cpu_count_logical': 72, 'cpu_freq': {'current': 1.0155277777777778, 'min': 1000.0, 'max': 3700.0}, 'cpu_freq_per_core': [{'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.001, 'min': 1000.0, 'max': 3700.0}, {'current': 0.998, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.909, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.505, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.038, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 2.15, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.576, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1.0, 'min': 1000.0, 'max': 3700.0}], 'disk': {'/': {'total': 1832.2062683105469, 'used': 602.5835990905762}}, 'gpu': 'NVIDIA GeForce RTX 3090', 'gpu_count': 4, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}], 'memory': {'total': 251.51219940185547}}
+2024-04-27 21:11:23,216 INFO    HandlerThread:885744 [system_monitor.py:probe():224] Finished collecting system info
+2024-04-27 21:11:23,216 INFO    HandlerThread:885744 [system_monitor.py:probe():227] Publishing system info
+2024-04-27 21:11:23,216 DEBUG   HandlerThread:885744 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-04-27 21:11:23,526 INFO    Thread-12 :885744 [dir_watcher.py:_on_file_created():271] file/dir created: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/conda-environment.yaml
+2024-04-27 21:11:27,945 DEBUG   HandlerThread:885744 [system_info.py:_save_conda():222] Saving conda packages done
+2024-04-27 21:11:27,947 INFO    HandlerThread:885744 [system_monitor.py:probe():229] Finished publishing system info
+2024-04-27 21:11:27,950 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 21:11:27,951 DEBUG   SenderThread:885744 [sender.py:send():379] send: files
+2024-04-27 21:11:27,951 INFO    SenderThread:885744 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-04-27 21:11:28,134 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: python_packages
+2024-04-27 21:11:28,134 DEBUG   SenderThread:885744 [sender.py:send_request():406] send_request: python_packages
+2024-04-27 21:11:28,136 DEBUG   SenderThread:885744 [sender.py:send():379] send: telemetry
+2024-04-27 21:11:28,137 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 21:11:28,137 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 21:11:28,138 DEBUG   SenderThread:885744 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 21:11:28,525 INFO    Thread-12 :885744 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/conda-environment.yaml
+2024-04-27 21:11:28,525 INFO    Thread-12 :885744 [dir_watcher.py:_on_file_created():271] file/dir created: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/wandb-metadata.json
+2024-04-27 21:11:28,526 INFO    Thread-12 :885744 [dir_watcher.py:_on_file_created():271] file/dir created: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/requirements.txt
+2024-04-27 21:11:29,145 INFO    wandb-upload_0:885744 [upload_job.py:push():131] Uploaded file /tmp/tmp_ea21f36wandb/p9boznx5-wandb-metadata.json
+2024-04-27 21:11:29,526 INFO    Thread-12 :885744 [dir_watcher.py:_on_file_created():271] file/dir created: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/output.log
+2024-04-27 21:11:31,527 INFO    Thread-12 :885744 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/output.log
+2024-04-27 21:11:32,910 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 21:11:35,244 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-27 21:11:35,248 DEBUG   SenderThread:885744 [sender.py:send():379] send: history
+2024-04-27 21:11:35,248 DEBUG   SenderThread:885744 [sender.py:send_request():406] send_request: summary_record
+2024-04-27 21:11:35,251 INFO    SenderThread:885744 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-27 21:11:35,529 INFO    Thread-12 :885744 [dir_watcher.py:_on_file_created():271] file/dir created: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/wandb-summary.json
+2024-04-27 21:11:37,530 INFO    Thread-12 :885744 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/output.log
+2024-04-27 21:11:38,257 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 21:11:39,260 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-27 21:11:39,262 DEBUG   SenderThread:885744 [sender.py:send():379] send: history
+2024-04-27 21:11:39,263 DEBUG   SenderThread:885744 [sender.py:send_request():406] send_request: summary_record
+2024-04-27 21:11:39,266 INFO    SenderThread:885744 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-27 21:11:39,531 INFO    Thread-12 :885744 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/wandb-summary.json
+2024-04-27 21:11:41,532 INFO    Thread-12 :885744 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/output.log
+2024-04-27 21:11:43,135 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 21:11:43,136 DEBUG   SenderThread:885744 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 21:11:43,136 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 21:11:43,262 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-27 21:11:43,451 DEBUG   SenderThread:885744 [sender.py:send():379] send: history
+2024-04-27 21:11:43,451 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 21:11:43,452 DEBUG   SenderThread:885744 [sender.py:send_request():406] send_request: summary_record
+2024-04-27 21:11:43,453 INFO    SenderThread:885744 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-27 21:11:43,533 INFO    Thread-12 :885744 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/wandb-summary.json
+2024-04-27 21:11:45,534 INFO    Thread-12 :885744 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/output.log
+2024-04-27 21:11:47,335 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-27 21:11:47,339 DEBUG   SenderThread:885744 [sender.py:send():379] send: history
+2024-04-27 21:11:47,340 DEBUG   SenderThread:885744 [sender.py:send_request():406] send_request: summary_record
+2024-04-27 21:11:47,344 INFO    SenderThread:885744 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-27 21:11:47,537 INFO    Thread-12 :885744 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/wandb-summary.json
+2024-04-27 21:11:49,346 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 21:11:49,538 INFO    Thread-12 :885744 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/output.log
+2024-04-27 21:11:51,493 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-27 21:11:51,495 DEBUG   SenderThread:885744 [sender.py:send():379] send: history
+2024-04-27 21:11:51,495 DEBUG   SenderThread:885744 [sender.py:send_request():406] send_request: summary_record
+2024-04-27 21:11:51,496 INFO    SenderThread:885744 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-27 21:11:51,540 INFO    Thread-12 :885744 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/wandb-summary.json
+2024-04-27 21:11:53,541 INFO    Thread-12 :885744 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/output.log
+2024-04-27 21:11:54,502 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 21:11:55,542 INFO    Thread-12 :885744 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/config.yaml
+2024-04-27 21:11:55,613 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-27 21:11:55,615 DEBUG   SenderThread:885744 [sender.py:send():379] send: history
+2024-04-27 21:11:55,616 DEBUG   SenderThread:885744 [sender.py:send_request():406] send_request: summary_record
+2024-04-27 21:11:55,618 INFO    SenderThread:885744 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-27 21:11:56,543 INFO    Thread-12 :885744 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/wandb-summary.json
+2024-04-27 21:11:57,543 INFO    Thread-12 :885744 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/output.log
+2024-04-27 21:11:58,139 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 21:11:58,140 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 21:11:58,140 DEBUG   SenderThread:885744 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 21:11:59,611 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-27 21:11:59,613 DEBUG   SenderThread:885744 [sender.py:send():379] send: history
+2024-04-27 21:11:59,613 DEBUG   SenderThread:885744 [sender.py:send_request():406] send_request: summary_record
+2024-04-27 21:11:59,614 INFO    SenderThread:885744 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-27 21:12:00,545 INFO    Thread-12 :885744 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/wandb-summary.json
+2024-04-27 21:12:00,652 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 21:12:01,546 INFO    Thread-12 :885744 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/output.log
+2024-04-27 21:12:03,652 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-27 21:12:03,654 DEBUG   SenderThread:885744 [sender.py:send():379] send: history
+2024-04-27 21:12:03,654 DEBUG   SenderThread:885744 [sender.py:send_request():406] send_request: summary_record
+2024-04-27 21:12:03,657 INFO    SenderThread:885744 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-27 21:12:04,547 INFO    Thread-12 :885744 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/wandb-summary.json
+2024-04-27 21:12:05,548 INFO    Thread-12 :885744 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/output.log
+2024-04-27 21:12:05,658 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 21:12:07,729 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-27 21:12:07,731 DEBUG   SenderThread:885744 [sender.py:send():379] send: history
+2024-04-27 21:12:07,731 DEBUG   SenderThread:885744 [sender.py:send_request():406] send_request: summary_record
+2024-04-27 21:12:07,732 INFO    SenderThread:885744 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-27 21:12:08,549 INFO    Thread-12 :885744 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/wandb-summary.json
+2024-04-27 21:12:09,550 INFO    Thread-12 :885744 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/output.log
+2024-04-27 21:12:10,733 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 21:12:11,849 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-27 21:12:11,851 DEBUG   SenderThread:885744 [sender.py:send():379] send: history
+2024-04-27 21:12:11,852 DEBUG   SenderThread:885744 [sender.py:send_request():406] send_request: summary_record
+2024-04-27 21:12:11,856 INFO    SenderThread:885744 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-27 21:12:11,859 DEBUG   SenderThread:885744 [sender.py:send():379] send: exit
+2024-04-27 21:12:11,859 INFO    SenderThread:885744 [sender.py:send_exit():586] handling exit code: 0
+2024-04-27 21:12:11,859 INFO    SenderThread:885744 [sender.py:send_exit():588] handling runtime: 48
+2024-04-27 21:12:11,859 INFO    SenderThread:885744 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-27 21:12:11,860 INFO    SenderThread:885744 [sender.py:send_exit():594] send defer
+2024-04-27 21:12:11,860 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 21:12:11,860 INFO    HandlerThread:885744 [handler.py:handle_request_defer():172] handle defer: 0
+2024-04-27 21:12:11,861 DEBUG   SenderThread:885744 [sender.py:send_request():406] send_request: defer
+2024-04-27 21:12:11,861 INFO    SenderThread:885744 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-04-27 21:12:11,861 INFO    SenderThread:885744 [sender.py:transition_state():614] send defer: 1
+2024-04-27 21:12:11,861 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 21:12:11,861 INFO    HandlerThread:885744 [handler.py:handle_request_defer():172] handle defer: 1
+2024-04-27 21:12:11,862 DEBUG   SenderThread:885744 [sender.py:send_request():406] send_request: defer
+2024-04-27 21:12:11,862 INFO    SenderThread:885744 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-04-27 21:12:11,862 INFO    SenderThread:885744 [sender.py:transition_state():614] send defer: 2
+2024-04-27 21:12:11,862 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 21:12:11,862 INFO    HandlerThread:885744 [handler.py:handle_request_defer():172] handle defer: 2
+2024-04-27 21:12:11,862 INFO    HandlerThread:885744 [system_monitor.py:finish():203] Stopping system monitor
+2024-04-27 21:12:11,863 DEBUG   SystemMonitor:885744 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-04-27 21:12:11,863 DEBUG   SystemMonitor:885744 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-04-27 21:12:11,863 DEBUG   SystemMonitor:885744 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-04-27 21:12:11,868 INFO    HandlerThread:885744 [interfaces.py:finish():202] Joined cpu monitor
+2024-04-27 21:12:11,869 INFO    HandlerThread:885744 [interfaces.py:finish():202] Joined disk monitor
+2024-04-27 21:12:12,270 INFO    HandlerThread:885744 [interfaces.py:finish():202] Joined gpu monitor
+2024-04-27 21:12:12,271 INFO    HandlerThread:885744 [interfaces.py:finish():202] Joined memory monitor
+2024-04-27 21:12:12,271 INFO    HandlerThread:885744 [interfaces.py:finish():202] Joined network monitor
+2024-04-27 21:12:12,272 DEBUG   SenderThread:885744 [sender.py:send_request():406] send_request: defer
+2024-04-27 21:12:12,272 INFO    SenderThread:885744 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-04-27 21:12:12,272 INFO    SenderThread:885744 [sender.py:transition_state():614] send defer: 3
+2024-04-27 21:12:12,272 DEBUG   SenderThread:885744 [sender.py:send():379] send: stats
+2024-04-27 21:12:12,272 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 21:12:12,274 INFO    HandlerThread:885744 [handler.py:handle_request_defer():172] handle defer: 3
+2024-04-27 21:12:12,274 DEBUG   SenderThread:885744 [sender.py:send_request():406] send_request: defer
+2024-04-27 21:12:12,274 INFO    SenderThread:885744 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-04-27 21:12:12,274 INFO    SenderThread:885744 [sender.py:transition_state():614] send defer: 4
+2024-04-27 21:12:12,275 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 21:12:12,275 INFO    HandlerThread:885744 [handler.py:handle_request_defer():172] handle defer: 4
+2024-04-27 21:12:12,275 DEBUG   SenderThread:885744 [sender.py:send_request():406] send_request: defer
+2024-04-27 21:12:12,275 INFO    SenderThread:885744 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-04-27 21:12:12,276 INFO    SenderThread:885744 [sender.py:transition_state():614] send defer: 5
+2024-04-27 21:12:12,276 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 21:12:12,276 INFO    HandlerThread:885744 [handler.py:handle_request_defer():172] handle defer: 5
+2024-04-27 21:12:12,277 DEBUG   SenderThread:885744 [sender.py:send():379] send: summary
+2024-04-27 21:12:12,277 INFO    SenderThread:885744 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-27 21:12:12,278 DEBUG   SenderThread:885744 [sender.py:send_request():406] send_request: defer
+2024-04-27 21:12:12,278 INFO    SenderThread:885744 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-04-27 21:12:12,278 INFO    SenderThread:885744 [sender.py:transition_state():614] send defer: 6
+2024-04-27 21:12:12,278 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 21:12:12,278 INFO    HandlerThread:885744 [handler.py:handle_request_defer():172] handle defer: 6
+2024-04-27 21:12:12,280 DEBUG   SenderThread:885744 [sender.py:send_request():406] send_request: defer
+2024-04-27 21:12:12,280 INFO    SenderThread:885744 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-04-27 21:12:12,280 INFO    SenderThread:885744 [sender.py:transition_state():614] send defer: 7
+2024-04-27 21:12:12,280 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 21:12:12,280 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 21:12:12,281 INFO    HandlerThread:885744 [handler.py:handle_request_defer():172] handle defer: 7
+2024-04-27 21:12:12,281 DEBUG   SenderThread:885744 [sender.py:send_request():406] send_request: defer
+2024-04-27 21:12:12,281 INFO    SenderThread:885744 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-04-27 21:12:12,552 INFO    Thread-12 :885744 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/wandb-summary.json
+2024-04-27 21:12:12,859 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-27 21:12:13,293 INFO    SenderThread:885744 [sender.py:transition_state():614] send defer: 8
+2024-04-27 21:12:13,293 DEBUG   SenderThread:885744 [sender.py:send_request():406] send_request: poll_exit
+2024-04-27 21:12:13,293 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 21:12:13,294 INFO    HandlerThread:885744 [handler.py:handle_request_defer():172] handle defer: 8
+2024-04-27 21:12:13,295 DEBUG   SenderThread:885744 [sender.py:send_request():406] send_request: defer
+2024-04-27 21:12:13,295 INFO    SenderThread:885744 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-04-27 21:12:13,295 INFO    SenderThread:885744 [job_builder.py:build():318] Attempting to build job artifact
+2024-04-27 21:12:13,296 INFO    SenderThread:885744 [job_builder.py:_get_source_type():455] is repo sourced job
+2024-04-27 21:12:13,340 INFO    SenderThread:885744 [job_builder.py:build():431] adding wandb-job metadata file
+2024-04-27 21:12:13,349 INFO    SenderThread:885744 [sender.py:transition_state():614] send defer: 9
+2024-04-27 21:12:13,350 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 21:12:13,350 INFO    HandlerThread:885744 [handler.py:handle_request_defer():172] handle defer: 9
+2024-04-27 21:12:13,350 DEBUG   SenderThread:885744 [sender.py:send():379] send: artifact
+2024-04-27 21:12:13,552 INFO    Thread-12 :885744 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/output.log
+2024-04-27 21:12:13,859 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-27 21:12:14,724 INFO    SenderThread:885744 [sender.py:send_artifact():1468] sent artifact job-https___github.com_LeverImmy_Introduction-to-Artificial-Intelligence.git_Classification_src_main.py - {'id': 'QXJ0aWZhY3Q6ODEyODAyMDkx', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE2NzMwNTcwNQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6ODEyODMxNjI4', 'versionIndex': 5}}}
+2024-04-27 21:12:14,724 DEBUG   SenderThread:885744 [sender.py:send_request():406] send_request: defer
+2024-04-27 21:12:14,724 INFO    SenderThread:885744 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-04-27 21:12:14,724 INFO    SenderThread:885744 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-04-27 21:12:15,554 INFO    SenderThread:885744 [dir_watcher.py:finish():388] scan: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files
+2024-04-27 21:12:15,554 INFO    SenderThread:885744 [dir_watcher.py:finish():402] scan save: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/wandb-summary.json wandb-summary.json
+2024-04-27 21:12:15,555 INFO    SenderThread:885744 [dir_watcher.py:finish():402] scan save: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/conda-environment.yaml conda-environment.yaml
+2024-04-27 21:12:15,555 INFO    SenderThread:885744 [dir_watcher.py:finish():402] scan save: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/config.yaml config.yaml
+2024-04-27 21:12:15,563 INFO    SenderThread:885744 [dir_watcher.py:finish():402] scan save: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/wandb-metadata.json wandb-metadata.json
+2024-04-27 21:12:15,563 INFO    SenderThread:885744 [dir_watcher.py:finish():402] scan save: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/requirements.txt requirements.txt
+2024-04-27 21:12:15,565 INFO    SenderThread:885744 [dir_watcher.py:finish():402] scan save: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/output.log output.log
+2024-04-27 21:12:15,572 INFO    SenderThread:885744 [sender.py:transition_state():614] send defer: 10
+2024-04-27 21:12:15,573 DEBUG   SenderThread:885744 [sender.py:send_request():406] send_request: poll_exit
+2024-04-27 21:12:15,573 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 21:12:15,574 INFO    HandlerThread:885744 [handler.py:handle_request_defer():172] handle defer: 10
+2024-04-27 21:12:15,577 DEBUG   SenderThread:885744 [sender.py:send_request():406] send_request: defer
+2024-04-27 21:12:15,578 INFO    SenderThread:885744 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-04-27 21:12:15,578 INFO    SenderThread:885744 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-27 21:12:15,861 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-27 21:12:15,862 DEBUG   SenderThread:885744 [sender.py:send_request():406] send_request: poll_exit
+2024-04-27 21:12:16,163 INFO    wandb-upload_0:885744 [upload_job.py:push():131] Uploaded file /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/wandb-summary.json
+2024-04-27 21:12:16,479 INFO    wandb-upload_1:885744 [upload_job.py:push():131] Uploaded file /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/conda-environment.yaml
+2024-04-27 21:12:16,685 INFO    wandb-upload_4:885744 [upload_job.py:push():131] Uploaded file /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/output.log
+2024-04-27 21:12:16,863 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-27 21:12:16,864 DEBUG   SenderThread:885744 [sender.py:send_request():406] send_request: poll_exit
+2024-04-27 21:12:16,944 INFO    wandb-upload_2:885744 [upload_job.py:push():131] Uploaded file /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/config.yaml
+2024-04-27 21:12:17,009 INFO    wandb-upload_3:885744 [upload_job.py:push():131] Uploaded file /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/files/requirements.txt
+2024-04-27 21:12:17,210 INFO    Thread-11 (_thread_body):885744 [sender.py:transition_state():614] send defer: 11
+2024-04-27 21:12:17,211 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 21:12:17,211 INFO    HandlerThread:885744 [handler.py:handle_request_defer():172] handle defer: 11
+2024-04-27 21:12:17,212 DEBUG   SenderThread:885744 [sender.py:send_request():406] send_request: defer
+2024-04-27 21:12:17,212 INFO    SenderThread:885744 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-04-27 21:12:17,212 INFO    SenderThread:885744 [file_pusher.py:join():178] waiting for file pusher
+2024-04-27 21:12:17,212 INFO    SenderThread:885744 [sender.py:transition_state():614] send defer: 12
+2024-04-27 21:12:17,213 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 21:12:17,213 INFO    HandlerThread:885744 [handler.py:handle_request_defer():172] handle defer: 12
+2024-04-27 21:12:17,213 DEBUG   SenderThread:885744 [sender.py:send_request():406] send_request: defer
+2024-04-27 21:12:17,213 INFO    SenderThread:885744 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-04-27 21:12:17,213 INFO    SenderThread:885744 [file_stream.py:finish():614] file stream finish called
+2024-04-27 21:12:17,603 INFO    SenderThread:885744 [file_stream.py:finish():618] file stream finish is done
+2024-04-27 21:12:17,603 INFO    SenderThread:885744 [sender.py:transition_state():614] send defer: 13
+2024-04-27 21:12:17,604 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 21:12:17,604 INFO    HandlerThread:885744 [handler.py:handle_request_defer():172] handle defer: 13
+2024-04-27 21:12:17,604 DEBUG   SenderThread:885744 [sender.py:send_request():406] send_request: defer
+2024-04-27 21:12:17,605 INFO    SenderThread:885744 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-04-27 21:12:17,605 INFO    SenderThread:885744 [sender.py:transition_state():614] send defer: 14
+2024-04-27 21:12:17,605 DEBUG   SenderThread:885744 [sender.py:send():379] send: final
+2024-04-27 21:12:17,606 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 21:12:17,606 DEBUG   SenderThread:885744 [sender.py:send():379] send: footer
+2024-04-27 21:12:17,606 INFO    HandlerThread:885744 [handler.py:handle_request_defer():172] handle defer: 14
+2024-04-27 21:12:17,607 DEBUG   SenderThread:885744 [sender.py:send_request():406] send_request: defer
+2024-04-27 21:12:17,607 INFO    SenderThread:885744 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-04-27 21:12:17,608 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-27 21:12:17,608 DEBUG   SenderThread:885744 [sender.py:send_request():406] send_request: poll_exit
+2024-04-27 21:12:17,609 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-27 21:12:17,610 DEBUG   SenderThread:885744 [sender.py:send_request():406] send_request: poll_exit
+2024-04-27 21:12:17,610 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: server_info
+2024-04-27 21:12:17,611 DEBUG   SenderThread:885744 [sender.py:send_request():406] send_request: server_info
+2024-04-27 21:12:17,615 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: get_summary
+2024-04-27 21:12:17,616 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: sampled_history
+2024-04-27 21:12:17,618 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 21:12:17,876 INFO    MainThread:885744 [wandb_run.py:_footer_history_summary_info():3936] rendering history
+2024-04-27 21:12:17,877 INFO    MainThread:885744 [wandb_run.py:_footer_history_summary_info():3968] rendering summary
+2024-04-27 21:12:17,878 INFO    MainThread:885744 [wandb_run.py:_footer_sync_info():3895] logging synced files
+2024-04-27 21:12:17,878 DEBUG   HandlerThread:885744 [handler.py:handle_request():146] handle_request: shutdown
+2024-04-27 21:12:17,879 INFO    HandlerThread:885744 [handler.py:finish():866] shutting down handler
+2024-04-27 21:12:18,611 INFO    WriterThread:885744 [datastore.py:close():296] close: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_211121-ibon0p5h/run-ibon0p5h.wandb
+2024-04-27 21:12:18,876 INFO    SenderThread:885744 [sender.py:finish():1546] shutting down sender
+2024-04-27 21:12:18,876 INFO    SenderThread:885744 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-27 21:12:18,876 INFO    SenderThread:885744 [file_pusher.py:join():178] waiting for file pusher

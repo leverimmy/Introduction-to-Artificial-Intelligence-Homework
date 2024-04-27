@@ -1,0 +1,28 @@
+2024-04-27 21:01:58,581 INFO    MainThread:861525 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2024-04-27 21:01:58,581 INFO    MainThread:861525 [wandb_setup.py:_flush():76] Configure stats pid to 861525
+2024-04-27 21:01:58,582 INFO    MainThread:861525 [wandb_setup.py:_flush():76] Loading settings from /home/leverimmy/.config/wandb/settings
+2024-04-27 21:01:58,582 INFO    MainThread:861525 [wandb_setup.py:_flush():76] Loading settings from /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/settings
+2024-04-27 21:01:58,582 INFO    MainThread:861525 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-04-27 21:01:58,582 INFO    MainThread:861525 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-04-27 21:01:58,582 INFO    MainThread:861525 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'Classification/src/main.py', 'program_abspath': '/home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/main.py', 'program': '/home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/main.py'}
+2024-04-27 21:01:58,582 INFO    MainThread:861525 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-04-27 21:01:58,582 INFO    MainThread:861525 [wandb_init.py:_log_setup():521] Logging user logs to /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_210158-0bi7ucpl/logs/debug.log
+2024-04-27 21:01:58,582 INFO    MainThread:861525 [wandb_init.py:_log_setup():522] Logging internal logs to /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_210158-0bi7ucpl/logs/debug-internal.log
+2024-04-27 21:01:58,583 INFO    MainThread:861525 [wandb_init.py:init():561] calling init triggers
+2024-04-27 21:01:58,583 INFO    MainThread:861525 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {}
+2024-04-27 21:01:58,583 INFO    MainThread:861525 [wandb_init.py:init():611] starting backend
+2024-04-27 21:01:58,583 INFO    MainThread:861525 [wandb_init.py:init():615] setting up manager
+2024-04-27 21:01:58,590 INFO    MainThread:861525 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-04-27 21:01:58,591 INFO    MainThread:861525 [wandb_init.py:init():623] backend started and connected
+2024-04-27 21:01:58,600 INFO    MainThread:861525 [wandb_init.py:init():715] updated telemetry
+2024-04-27 21:01:58,620 INFO    MainThread:861525 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2024-04-27 21:01:59,659 INFO    MainThread:861525 [wandb_run.py:_on_init():2357] communicating current version
+2024-04-27 21:02:00,210 INFO    MainThread:861525 [wandb_run.py:_on_init():2366] got version response 
+2024-04-27 21:02:00,210 INFO    MainThread:861525 [wandb_init.py:init():799] starting run threads in backend
+2024-04-27 21:02:05,264 INFO    MainThread:861525 [wandb_run.py:_console_start():2335] atexit reg
+2024-04-27 21:02:05,264 INFO    MainThread:861525 [wandb_run.py:_redirect():2190] redirect: wrap_raw
+2024-04-27 21:02:05,264 INFO    MainThread:861525 [wandb_run.py:_redirect():2255] Wrapping output streams.
+2024-04-27 21:02:05,264 INFO    MainThread:861525 [wandb_run.py:_redirect():2280] Redirects installed.
+2024-04-27 21:02:05,265 INFO    MainThread:861525 [wandb_init.py:init():842] run started, returning control to user process
+2024-04-27 21:02:57,936 WARNING MsgRouterThr:861525 [router.py:message_loop():77] message_loop has been closed

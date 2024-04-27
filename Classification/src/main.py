@@ -77,7 +77,7 @@ def parser_data():
         "--choice",
         dest="choice",
         type=str,
-        default="BerT",
+        default="CNN",
         help="Choice of model: CNN, RNN_LTSM, RNN_GRU, MLP, BerT.",
     )
     args = parser.parse_args()

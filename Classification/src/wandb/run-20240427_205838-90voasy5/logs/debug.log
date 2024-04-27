@@ -1,0 +1,43 @@
+2024-04-27 20:58:38,022 INFO    MainThread:851905 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2024-04-27 20:58:38,022 INFO    MainThread:851905 [wandb_setup.py:_flush():76] Configure stats pid to 851905
+2024-04-27 20:58:38,022 INFO    MainThread:851905 [wandb_setup.py:_flush():76] Loading settings from /home/leverimmy/.config/wandb/settings
+2024-04-27 20:58:38,022 INFO    MainThread:851905 [wandb_setup.py:_flush():76] Loading settings from /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/settings
+2024-04-27 20:58:38,022 INFO    MainThread:851905 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-04-27 20:58:38,023 INFO    MainThread:851905 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-04-27 20:58:38,023 INFO    MainThread:851905 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'Classification/src/main.py', 'program_abspath': '/home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/main.py', 'program': '/home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/main.py'}
+2024-04-27 20:58:38,023 INFO    MainThread:851905 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-04-27 20:58:38,023 INFO    MainThread:851905 [wandb_init.py:_log_setup():521] Logging user logs to /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_205838-90voasy5/logs/debug.log
+2024-04-27 20:58:38,023 INFO    MainThread:851905 [wandb_init.py:_log_setup():522] Logging internal logs to /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240427_205838-90voasy5/logs/debug-internal.log
+2024-04-27 20:58:38,023 INFO    MainThread:851905 [wandb_init.py:init():561] calling init triggers
+2024-04-27 20:58:38,023 INFO    MainThread:851905 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {}
+2024-04-27 20:58:38,023 INFO    MainThread:851905 [wandb_init.py:init():611] starting backend
+2024-04-27 20:58:38,024 INFO    MainThread:851905 [wandb_init.py:init():615] setting up manager
+2024-04-27 20:58:38,030 INFO    MainThread:851905 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-04-27 20:58:38,031 INFO    MainThread:851905 [wandb_init.py:init():623] backend started and connected
+2024-04-27 20:58:38,046 INFO    MainThread:851905 [wandb_init.py:init():715] updated telemetry
+2024-04-27 20:58:38,068 INFO    MainThread:851905 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2024-04-27 20:58:38,766 WARNING MainThread:851905 [wandb_init.py:init():1203] interrupted
+Traceback (most recent call last):
+  File "/home/leverimmy/anaconda3/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1181, in init
+    run = wi.init()
+          ^^^^^^^^^
+  File "/home/leverimmy/anaconda3/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 751, in init
+    result = run_init_handle.wait(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leverimmy/anaconda3/lib/python3.11/site-packages/wandb/sdk/lib/mailbox.py", line 283, in wait
+    found, abandoned = self._slot._get_and_clear(timeout=wait_timeout)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leverimmy/anaconda3/lib/python3.11/site-packages/wandb/sdk/lib/mailbox.py", line 130, in _get_and_clear
+    if self._wait(timeout=timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leverimmy/anaconda3/lib/python3.11/site-packages/wandb/sdk/lib/mailbox.py", line 126, in _wait
+    return self._event.wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leverimmy/anaconda3/lib/python3.11/threading.py", line 622, in wait
+    signaled = self._cond.wait(timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leverimmy/anaconda3/lib/python3.11/threading.py", line 324, in wait
+    gotit = waiter.acquire(True, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
