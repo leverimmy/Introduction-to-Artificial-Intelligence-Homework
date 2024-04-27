@@ -62,7 +62,7 @@ def parser_data():
         dest="max_length",
         type=int,
         default=50,
-        help="The maximum length of the sequence.",
+        help="The maximum length of the sentence.",
     )
     parser.add_argument(
         "-b",
