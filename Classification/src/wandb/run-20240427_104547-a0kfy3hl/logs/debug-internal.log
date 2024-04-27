@@ -1,0 +1,410 @@
+2024-04-27 10:45:47,424 INFO    StreamThr :23156 [internal.py:wandb_internal():86] W&B internal server running at pid: 23156, started at: 2024-04-27 10:45:47.422902
+2024-04-27 10:45:47,428 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status
+2024-04-27 10:45:47,448 INFO    WriterThread:23156 [datastore.py:open_for_write():87] open: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_104547-a0kfy3hl\run-a0kfy3hl.wandb
+2024-04-27 10:45:47,449 DEBUG   SenderThread:23156 [sender.py:send():379] send: header
+2024-04-27 10:45:47,517 DEBUG   SenderThread:23156 [sender.py:send():379] send: run
+2024-04-27 10:45:48,543 INFO    SenderThread:23156 [dir_watcher.py:__init__():211] watching files in: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_104547-a0kfy3hl\files
+2024-04-27 10:45:48,544 INFO    SenderThread:23156 [sender.py:_start_run_threads():1124] run started: a0kfy3hl with start time 1714185947.427895
+2024-04-27 10:45:48,564 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: check_version
+2024-04-27 10:45:48,565 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: check_version
+2024-04-27 10:45:49,251 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: run_start
+2024-04-27 10:45:49,281 DEBUG   HandlerThread:23156 [system_info.py:__init__():26] System info init
+2024-04-27 10:45:49,281 DEBUG   HandlerThread:23156 [system_info.py:__init__():41] System info init done
+2024-04-27 10:45:49,282 INFO    HandlerThread:23156 [system_monitor.py:start():194] Starting system monitor
+2024-04-27 10:45:49,282 INFO    SystemMonitor:23156 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-04-27 10:45:49,282 INFO    HandlerThread:23156 [system_monitor.py:probe():214] Collecting system info
+2024-04-27 10:45:49,292 INFO    SystemMonitor:23156 [interfaces.py:start():190] Started cpu monitoring
+2024-04-27 10:45:49,302 DEBUG   HandlerThread:23156 [system_info.py:probe():150] Probing system
+2024-04-27 10:45:49,302 INFO    SystemMonitor:23156 [interfaces.py:start():190] Started disk monitoring
+2024-04-27 10:45:49,321 INFO    SystemMonitor:23156 [interfaces.py:start():190] Started memory monitoring
+2024-04-27 10:45:49,332 INFO    SystemMonitor:23156 [interfaces.py:start():190] Started network monitoring
+2024-04-27 10:45:49,341 DEBUG   HandlerThread:23156 [system_info.py:_probe_git():135] Probing git
+2024-04-27 10:45:49,461 DEBUG   HandlerThread:23156 [system_info.py:_probe_git():143] Probing git done
+2024-04-27 10:45:49,461 DEBUG   HandlerThread:23156 [system_info.py:probe():198] Probing system done
+2024-04-27 10:45:49,461 DEBUG   HandlerThread:23156 [system_monitor.py:probe():223] {'os': 'Windows-11-10.0.22631-SP0', 'python': '3.12.0', 'heartbeatAt': '2024-04-27T02:45:49.302523', 'startedAt': '2024-04-27T02:45:47.401145', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'E:\\Codes\\Projects\\Introduction-to-Artificial-Intelligence\\Classification\\src\\main.py', 'codePathLocal': 'main.py', 'codePath': 'Classification\\src\\main.py', 'git': {'remote': 'https://github.com/LeverImmy/Introduction-to-Artificial-Intelligence.git', 'commit': '7de010a389206261847dbde4626f5c4b8903afea'}, 'email': '506503360@qq.com', 'root': 'E:/Codes/Projects/Introduction-to-Artificial-Intelligence', 'host': 'Worptop', 'username': '50650', 'executable': 'D:\\ProgramFiles\\Python\\Python312\\python.exe', 'cpu_count': 12, 'cpu_count_logical': 16, 'cpu_freq': {'current': 1504.0, 'min': 0.0, 'max': 1900.0}, 'cpu_freq_per_core': [{'current': 1504.0, 'min': 0.0, 'max': 1900.0}], 'disk': {'/': {'total': 149.99999618530273, 'used': 36.02252197265625}}, 'memory': {'total': 15.730705261230469}}
+2024-04-27 10:45:49,461 INFO    HandlerThread:23156 [system_monitor.py:probe():224] Finished collecting system info
+2024-04-27 10:45:49,462 INFO    HandlerThread:23156 [system_monitor.py:probe():227] Publishing system info
+2024-04-27 10:45:49,463 INFO    HandlerThread:23156 [system_monitor.py:probe():229] Finished publishing system info
+2024-04-27 10:45:49,469 DEBUG   SenderThread:23156 [sender.py:send():379] send: files
+2024-04-27 10:45:49,470 INFO    SenderThread:23156 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-04-27 10:45:49,552 INFO    Thread-16 :23156 [dir_watcher.py:_on_file_created():271] file/dir created: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_104547-a0kfy3hl\files\wandb-metadata.json
+2024-04-27 10:45:49,814 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: python_packages
+2024-04-27 10:45:49,814 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: python_packages
+2024-04-27 10:45:49,815 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:45:49,816 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:45:49,818 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:45:50,560 INFO    Thread-16 :23156 [dir_watcher.py:_on_file_created():271] file/dir created: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_104547-a0kfy3hl\files\requirements.txt
+2024-04-27 10:45:50,876 DEBUG   SenderThread:23156 [sender.py:send():379] send: telemetry
+2024-04-27 10:45:51,572 INFO    Thread-16 :23156 [dir_watcher.py:_on_file_created():271] file/dir created: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_104547-a0kfy3hl\files\output.log
+2024-04-27 10:45:52,889 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:45:53,597 INFO    Thread-16 :23156 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_104547-a0kfy3hl\files\output.log
+2024-04-27 10:45:55,793 INFO    wandb-upload_0:23156 [upload_job.py:push():131] Uploaded file C:\Users\50650\AppData\Local\Temp\tmpv2gjubh4wandb\mze08h49-wandb-metadata.json
+2024-04-27 10:45:57,943 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:46:03,002 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:46:04,830 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:46:04,831 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:46:04,831 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:46:08,237 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:46:13,266 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:46:18,310 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:46:18,849 INFO    Thread-16 :23156 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_104547-a0kfy3hl\files\config.yaml
+2024-04-27 10:46:19,830 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:46:19,830 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:46:19,845 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:46:24,189 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:46:29,239 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:46:34,264 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:46:34,923 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:46:34,961 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:46:34,973 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:46:39,359 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:46:44,405 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:46:49,337 DEBUG   SystemMonitor:23156 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-04-27 10:46:49,338 DEBUG   SenderThread:23156 [sender.py:send():379] send: stats
+2024-04-27 10:46:49,929 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:46:49,962 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:46:49,964 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:46:50,270 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:46:55,296 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:46:58,539 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-27 10:46:58,543 DEBUG   SenderThread:23156 [sender.py:send():379] send: history
+2024-04-27 10:46:58,543 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: summary_record
+2024-04-27 10:46:58,551 INFO    SenderThread:23156 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-27 10:46:59,520 INFO    Thread-16 :23156 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_104547-a0kfy3hl\files\output.log
+2024-04-27 10:46:59,520 INFO    Thread-16 :23156 [dir_watcher.py:_on_file_created():271] file/dir created: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_104547-a0kfy3hl\files\wandb-summary.json
+2024-04-27 10:47:00,604 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:47:01,546 INFO    Thread-16 :23156 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_104547-a0kfy3hl\files\output.log
+2024-04-27 10:47:04,933 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:47:04,961 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:47:04,961 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:47:06,217 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:47:11,264 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:47:16,308 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:47:19,351 DEBUG   SenderThread:23156 [sender.py:send():379] send: stats
+2024-04-27 10:47:19,939 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:47:19,971 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:47:19,971 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:47:21,320 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:47:26,390 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:47:31,444 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:47:34,959 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:47:34,995 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:47:34,999 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:47:37,323 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:47:42,391 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:47:47,459 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:47:49,394 DEBUG   SenderThread:23156 [sender.py:send():379] send: stats
+2024-04-27 10:47:49,969 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:47:50,015 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:47:50,015 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:47:53,431 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:47:58,480 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:48:03,520 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:48:04,982 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:48:05,031 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:48:05,032 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:48:09,407 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:48:14,451 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:48:19,409 DEBUG   SenderThread:23156 [sender.py:send():379] send: stats
+2024-04-27 10:48:19,984 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:48:20,030 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:48:20,031 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:48:20,313 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:48:25,350 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:48:27,042 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-27 10:48:27,044 DEBUG   SenderThread:23156 [sender.py:send():379] send: history
+2024-04-27 10:48:27,044 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: summary_record
+2024-04-27 10:48:27,045 INFO    SenderThread:23156 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-27 10:48:27,921 INFO    Thread-16 :23156 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_104547-a0kfy3hl\files\output.log
+2024-04-27 10:48:27,921 INFO    Thread-16 :23156 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_104547-a0kfy3hl\files\wandb-summary.json
+2024-04-27 10:48:29,957 INFO    Thread-16 :23156 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_104547-a0kfy3hl\files\output.log
+2024-04-27 10:48:31,087 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:48:34,988 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:48:35,044 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:48:35,044 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:48:36,441 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:48:41,477 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:48:46,523 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:48:49,420 DEBUG   SenderThread:23156 [sender.py:send():379] send: stats
+2024-04-27 10:48:49,999 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:48:50,061 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:48:50,061 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:48:52,450 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:48:57,564 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:49:02,656 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:49:05,020 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:49:05,074 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:49:05,077 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:49:08,438 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:49:13,479 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:49:18,581 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:49:19,449 DEBUG   SenderThread:23156 [sender.py:send():379] send: stats
+2024-04-27 10:49:20,027 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:49:20,087 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:49:20,087 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:49:24,462 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:49:29,502 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:49:34,556 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:49:35,035 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:49:35,089 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:49:35,089 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:49:40,410 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:49:45,461 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:49:49,472 DEBUG   SenderThread:23156 [sender.py:send():379] send: stats
+2024-04-27 10:49:50,043 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:49:50,091 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:49:50,095 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:49:51,444 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:49:56,532 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:49:57,967 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-27 10:49:57,967 DEBUG   SenderThread:23156 [sender.py:send():379] send: history
+2024-04-27 10:49:57,967 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: summary_record
+2024-04-27 10:49:57,967 INFO    SenderThread:23156 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-27 10:49:58,350 INFO    Thread-16 :23156 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_104547-a0kfy3hl\files\wandb-summary.json
+2024-04-27 10:50:00,368 INFO    Thread-16 :23156 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_104547-a0kfy3hl\files\output.log
+2024-04-27 10:50:02,006 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:50:05,052 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:50:05,094 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:50:05,094 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:50:07,345 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:50:12,394 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:50:17,480 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:50:19,477 DEBUG   SenderThread:23156 [sender.py:send():379] send: stats
+2024-04-27 10:50:20,068 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:50:20,098 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:50:20,098 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:50:23,430 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:50:28,525 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:50:33,592 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:50:35,072 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:50:35,149 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:50:35,149 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:50:39,448 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:50:44,514 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:50:49,503 DEBUG   SenderThread:23156 [sender.py:send():379] send: stats
+2024-04-27 10:50:50,100 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:50:50,134 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:50:50,134 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:50:50,474 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:50:55,514 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:51:00,544 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:51:05,112 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:51:05,143 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:51:05,143 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:51:06,499 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:51:11,600 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:51:16,710 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:51:19,517 DEBUG   SenderThread:23156 [sender.py:send():379] send: stats
+2024-04-27 10:51:20,120 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:51:20,153 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:51:20,153 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:51:22,466 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:51:27,529 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:51:31,571 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-27 10:51:31,571 DEBUG   SenderThread:23156 [sender.py:send():379] send: history
+2024-04-27 10:51:31,571 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: summary_record
+2024-04-27 10:51:31,575 INFO    SenderThread:23156 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-27 10:51:32,564 INFO    Thread-16 :23156 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_104547-a0kfy3hl\files\wandb-summary.json
+2024-04-27 10:51:32,590 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:51:34,593 INFO    Thread-16 :23156 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_104547-a0kfy3hl\files\output.log
+2024-04-27 10:51:35,125 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:51:35,158 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:51:35,158 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:51:38,488 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:51:43,531 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:51:48,585 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:51:49,526 DEBUG   SenderThread:23156 [sender.py:send():379] send: stats
+2024-04-27 10:51:50,134 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:51:50,179 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:51:50,179 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:51:54,492 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:51:59,540 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:52:04,592 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:52:05,147 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:52:05,179 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:52:05,180 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:52:09,614 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:52:14,695 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:52:19,537 DEBUG   SenderThread:23156 [sender.py:send():379] send: stats
+2024-04-27 10:52:20,155 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:52:20,185 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:52:20,185 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:52:20,185 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:52:25,507 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:52:30,539 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:52:35,177 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:52:35,196 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:52:35,197 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:52:36,482 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:52:41,565 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:52:46,632 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:52:49,556 DEBUG   SenderThread:23156 [sender.py:send():379] send: stats
+2024-04-27 10:52:50,185 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:52:50,198 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:52:50,198 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:52:52,576 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:52:57,633 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:53:02,677 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:53:04,586 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-27 10:53:04,586 DEBUG   SenderThread:23156 [sender.py:send():379] send: history
+2024-04-27 10:53:04,586 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: summary_record
+2024-04-27 10:53:04,590 INFO    SenderThread:23156 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-27 10:53:04,953 INFO    Thread-16 :23156 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_104547-a0kfy3hl\files\wandb-summary.json
+2024-04-27 10:53:05,202 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:53:05,202 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:53:05,211 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:53:05,960 INFO    Thread-16 :23156 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_104547-a0kfy3hl\files\output.log
+2024-04-27 10:53:06,975 INFO    Thread-16 :23156 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_104547-a0kfy3hl\files\output.log
+2024-04-27 10:53:08,497 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:53:13,513 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:53:18,590 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:53:19,565 DEBUG   SenderThread:23156 [sender.py:send():379] send: stats
+2024-04-27 10:53:20,218 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:53:20,218 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:53:20,218 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:53:23,598 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:53:28,662 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:53:33,740 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:53:35,227 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:53:35,227 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:53:35,239 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:53:39,593 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:53:44,649 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:53:49,581 DEBUG   SenderThread:23156 [sender.py:send():379] send: stats
+2024-04-27 10:53:50,221 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:53:50,236 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:53:50,236 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:53:50,248 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:53:55,716 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:54:00,778 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:54:05,254 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:54:05,254 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:54:05,254 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:54:06,521 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:54:11,589 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:54:16,684 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:54:19,582 DEBUG   SenderThread:23156 [sender.py:send():379] send: stats
+2024-04-27 10:54:20,283 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:54:20,283 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:54:20,283 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:54:22,651 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:54:27,677 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:54:32,729 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:54:33,784 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-27 10:54:33,788 DEBUG   SenderThread:23156 [sender.py:send():379] send: history
+2024-04-27 10:54:33,788 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: summary_record
+2024-04-27 10:54:33,788 INFO    SenderThread:23156 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-27 10:54:34,501 INFO    Thread-16 :23156 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_104547-a0kfy3hl\files\output.log
+2024-04-27 10:54:34,501 INFO    Thread-16 :23156 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_104547-a0kfy3hl\files\wandb-summary.json
+2024-04-27 10:54:35,279 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:54:35,279 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:54:35,279 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:54:38,707 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:54:43,741 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:54:48,786 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:54:49,607 DEBUG   SenderThread:23156 [sender.py:send():379] send: stats
+2024-04-27 10:54:50,295 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:54:50,295 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:54:50,295 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:54:54,602 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:54:59,699 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:55:04,783 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:55:05,306 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:55:05,306 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:55:05,306 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:55:10,650 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:55:15,746 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:55:19,617 DEBUG   SenderThread:23156 [sender.py:send():379] send: stats
+2024-04-27 10:55:20,305 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:55:20,305 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:55:20,321 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:55:21,573 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:55:26,624 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:55:31,690 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:55:35,308 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:55:35,308 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:55:35,324 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:55:37,637 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:55:42,674 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:55:47,721 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:55:49,620 DEBUG   SenderThread:23156 [sender.py:send():379] send: stats
+2024-04-27 10:55:50,323 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:55:50,323 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:55:50,336 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:55:50,725 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-27 10:55:50,759 DEBUG   SenderThread:23156 [sender.py:send():379] send: history
+2024-04-27 10:55:50,759 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: summary_record
+2024-04-27 10:55:50,759 INFO    SenderThread:23156 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-27 10:55:51,376 INFO    Thread-16 :23156 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_104547-a0kfy3hl\files\wandb-summary.json
+2024-04-27 10:55:52,384 INFO    Thread-16 :23156 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_104547-a0kfy3hl\files\output.log
+2024-04-27 10:55:52,771 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:55:53,387 INFO    Thread-16 :23156 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_104547-a0kfy3hl\files\output.log
+2024-04-27 10:55:57,839 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:56:02,885 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:56:05,347 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:56:05,347 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:56:05,348 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:56:08,753 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:56:13,784 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:56:18,829 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:56:19,626 DEBUG   SenderThread:23156 [sender.py:send():379] send: stats
+2024-04-27 10:56:20,356 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 10:56:20,357 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 10:56:20,357 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 10:56:24,784 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:56:29,863 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:56:30,654 DEBUG   SenderThread:23156 [sender.py:send():379] send: exit
+2024-04-27 10:56:30,654 INFO    SenderThread:23156 [sender.py:send_exit():586] handling exit code: 255
+2024-04-27 10:56:30,654 INFO    SenderThread:23156 [sender.py:send_exit():588] handling runtime: 641
+2024-04-27 10:56:30,654 INFO    SenderThread:23156 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-27 10:56:30,655 INFO    SenderThread:23156 [sender.py:send_exit():594] send defer
+2024-04-27 10:56:30,655 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 10:56:30,655 INFO    HandlerThread:23156 [handler.py:handle_request_defer():172] handle defer: 0
+2024-04-27 10:56:30,656 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: defer
+2024-04-27 10:56:30,656 INFO    SenderThread:23156 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-04-27 10:56:30,656 INFO    SenderThread:23156 [sender.py:transition_state():614] send defer: 1
+2024-04-27 10:56:30,656 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 10:56:30,656 INFO    HandlerThread:23156 [handler.py:handle_request_defer():172] handle defer: 1
+2024-04-27 10:56:30,656 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: defer
+2024-04-27 10:56:30,656 INFO    SenderThread:23156 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-04-27 10:56:30,656 INFO    SenderThread:23156 [sender.py:transition_state():614] send defer: 2
+2024-04-27 10:56:30,657 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 10:56:30,657 INFO    HandlerThread:23156 [handler.py:handle_request_defer():172] handle defer: 2
+2024-04-27 10:56:30,657 INFO    HandlerThread:23156 [system_monitor.py:finish():203] Stopping system monitor
+2024-04-27 10:56:30,657 INFO    HandlerThread:23156 [interfaces.py:finish():202] Joined cpu monitor
+2024-04-27 10:56:30,658 DEBUG   SystemMonitor:23156 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-04-27 10:56:30,658 INFO    HandlerThread:23156 [interfaces.py:finish():202] Joined disk monitor
+2024-04-27 10:56:30,658 DEBUG   SystemMonitor:23156 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-04-27 10:56:30,658 INFO    HandlerThread:23156 [interfaces.py:finish():202] Joined memory monitor
+2024-04-27 10:56:30,659 INFO    HandlerThread:23156 [interfaces.py:finish():202] Joined network monitor
+2024-04-27 10:56:30,660 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: defer
+2024-04-27 10:56:30,660 INFO    SenderThread:23156 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-04-27 10:56:30,660 INFO    SenderThread:23156 [sender.py:transition_state():614] send defer: 3
+2024-04-27 10:56:30,660 DEBUG   SenderThread:23156 [sender.py:send():379] send: stats
+2024-04-27 10:56:30,660 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 10:56:30,661 INFO    HandlerThread:23156 [handler.py:handle_request_defer():172] handle defer: 3
+2024-04-27 10:56:30,661 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: defer
+2024-04-27 10:56:30,661 INFO    SenderThread:23156 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-04-27 10:56:30,661 INFO    SenderThread:23156 [sender.py:transition_state():614] send defer: 4
+2024-04-27 10:56:30,661 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 10:56:30,661 INFO    HandlerThread:23156 [handler.py:handle_request_defer():172] handle defer: 4
+2024-04-27 10:56:30,662 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: defer
+2024-04-27 10:56:30,662 INFO    SenderThread:23156 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-04-27 10:56:30,662 INFO    SenderThread:23156 [sender.py:transition_state():614] send defer: 5
+2024-04-27 10:56:30,662 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 10:56:30,662 INFO    HandlerThread:23156 [handler.py:handle_request_defer():172] handle defer: 5
+2024-04-27 10:56:30,662 DEBUG   SenderThread:23156 [sender.py:send():379] send: summary
+2024-04-27 10:56:30,663 INFO    SenderThread:23156 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-27 10:56:30,663 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: defer
+2024-04-27 10:56:30,663 INFO    SenderThread:23156 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-04-27 10:56:30,663 INFO    SenderThread:23156 [sender.py:transition_state():614] send defer: 6
+2024-04-27 10:56:30,664 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 10:56:30,664 INFO    HandlerThread:23156 [handler.py:handle_request_defer():172] handle defer: 6
+2024-04-27 10:56:30,664 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: defer
+2024-04-27 10:56:30,664 INFO    SenderThread:23156 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-04-27 10:56:30,664 INFO    SenderThread:23156 [sender.py:transition_state():614] send defer: 7
+2024-04-27 10:56:30,664 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 10:56:30,665 DEBUG   HandlerThread:23156 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 10:56:30,665 INFO    HandlerThread:23156 [handler.py:handle_request_defer():172] handle defer: 7
+2024-04-27 10:56:30,665 DEBUG   SenderThread:23156 [sender.py:send_request():406] send_request: defer
+2024-04-27 10:56:30,665 INFO    SenderThread:23156 [sender.py:send_request_defer():610] handle sender defer: 7

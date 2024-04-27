@@ -1,0 +1,191 @@
+2024-04-27 12:21:18,323 INFO    StreamThr :7036 [internal.py:wandb_internal():86] W&B internal server running at pid: 7036, started at: 2024-04-27 12:21:18.321089
+2024-04-27 12:21:18,327 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: status
+2024-04-27 12:21:18,343 INFO    WriterThread:7036 [datastore.py:open_for_write():87] open: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_122118-9t50ndmt\run-9t50ndmt.wandb
+2024-04-27 12:21:18,344 DEBUG   SenderThread:7036 [sender.py:send():379] send: header
+2024-04-27 12:21:18,411 DEBUG   SenderThread:7036 [sender.py:send():379] send: run
+2024-04-27 12:21:19,634 INFO    SenderThread:7036 [dir_watcher.py:__init__():211] watching files in: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_122118-9t50ndmt\files
+2024-04-27 12:21:19,636 INFO    SenderThread:7036 [sender.py:_start_run_threads():1124] run started: 9t50ndmt with start time 1714191678.32409
+2024-04-27 12:21:19,637 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: check_version
+2024-04-27 12:21:19,638 DEBUG   SenderThread:7036 [sender.py:send_request():406] send_request: check_version
+2024-04-27 12:21:20,323 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: run_start
+2024-04-27 12:21:20,355 DEBUG   HandlerThread:7036 [system_info.py:__init__():26] System info init
+2024-04-27 12:21:20,355 DEBUG   HandlerThread:7036 [system_info.py:__init__():41] System info init done
+2024-04-27 12:21:20,355 INFO    HandlerThread:7036 [system_monitor.py:start():194] Starting system monitor
+2024-04-27 12:21:20,356 INFO    SystemMonitor:7036 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-04-27 12:21:20,356 INFO    HandlerThread:7036 [system_monitor.py:probe():214] Collecting system info
+2024-04-27 12:21:20,368 INFO    SystemMonitor:7036 [interfaces.py:start():190] Started cpu monitoring
+2024-04-27 12:21:20,380 DEBUG   HandlerThread:7036 [system_info.py:probe():150] Probing system
+2024-04-27 12:21:20,380 INFO    SystemMonitor:7036 [interfaces.py:start():190] Started disk monitoring
+2024-04-27 12:21:20,392 INFO    SystemMonitor:7036 [interfaces.py:start():190] Started memory monitoring
+2024-04-27 12:21:20,427 INFO    SystemMonitor:7036 [interfaces.py:start():190] Started network monitoring
+2024-04-27 12:21:20,429 DEBUG   HandlerThread:7036 [system_info.py:_probe_git():135] Probing git
+2024-04-27 12:21:20,621 DEBUG   HandlerThread:7036 [system_info.py:_probe_git():143] Probing git done
+2024-04-27 12:21:20,622 DEBUG   HandlerThread:7036 [system_info.py:probe():198] Probing system done
+2024-04-27 12:21:20,622 DEBUG   HandlerThread:7036 [system_monitor.py:probe():223] {'os': 'Windows-11-10.0.22631-SP0', 'python': '3.12.0', 'heartbeatAt': '2024-04-27T04:21:20.380104', 'startedAt': '2024-04-27T04:21:18.273540', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'E:\\Codes\\Projects\\Introduction-to-Artificial-Intelligence\\Classification\\src\\main.py', 'codePathLocal': 'main.py', 'codePath': 'Classification\\src\\main.py', 'git': {'remote': 'https://github.com/LeverImmy/Introduction-to-Artificial-Intelligence.git', 'commit': '363ff67ba5f644ee7d1335b3b41391ef22b125d3'}, 'email': '506503360@qq.com', 'root': 'E:/Codes/Projects/Introduction-to-Artificial-Intelligence', 'host': 'Worptop', 'username': '50650', 'executable': 'D:\\ProgramFiles\\Python\\Python312\\python.exe', 'cpu_count': 12, 'cpu_count_logical': 16, 'cpu_freq': {'current': 1504.0, 'min': 0.0, 'max': 1900.0}, 'cpu_freq_per_core': [{'current': 1504.0, 'min': 0.0, 'max': 1900.0}], 'disk': {'/': {'total': 149.99999618530273, 'used': 36.02278137207031}}, 'memory': {'total': 15.730705261230469}}
+2024-04-27 12:21:20,622 INFO    HandlerThread:7036 [system_monitor.py:probe():224] Finished collecting system info
+2024-04-27 12:21:20,622 INFO    HandlerThread:7036 [system_monitor.py:probe():227] Publishing system info
+2024-04-27 12:21:20,625 INFO    HandlerThread:7036 [system_monitor.py:probe():229] Finished publishing system info
+2024-04-27 12:21:20,631 DEBUG   SenderThread:7036 [sender.py:send():379] send: files
+2024-04-27 12:21:20,632 INFO    SenderThread:7036 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-04-27 12:21:20,642 INFO    Thread-16 :7036 [dir_watcher.py:_on_file_created():271] file/dir created: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_122118-9t50ndmt\files\wandb-metadata.json
+2024-04-27 12:21:21,377 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: python_packages
+2024-04-27 12:21:21,377 DEBUG   SenderThread:7036 [sender.py:send_request():406] send_request: python_packages
+2024-04-27 12:21:21,401 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 12:21:21,401 DEBUG   SenderThread:7036 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 12:21:21,420 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 12:21:21,654 INFO    Thread-16 :7036 [dir_watcher.py:_on_file_created():271] file/dir created: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_122118-9t50ndmt\files\requirements.txt
+2024-04-27 12:21:21,859 DEBUG   SenderThread:7036 [sender.py:send():379] send: telemetry
+2024-04-27 12:21:22,663 INFO    Thread-16 :7036 [dir_watcher.py:_on_file_created():271] file/dir created: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_122118-9t50ndmt\files\output.log
+2024-04-27 12:21:23,876 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 12:21:24,466 INFO    wandb-upload_0:7036 [upload_job.py:push():131] Uploaded file C:\Users\50650\AppData\Local\Temp\tmp1yad6rjuwandb\d0pv8yq4-wandb-metadata.json
+2024-04-27 12:21:24,686 INFO    Thread-16 :7036 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_122118-9t50ndmt\files\output.log
+2024-04-27 12:21:28,928 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 12:21:33,967 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 12:21:36,399 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 12:21:36,399 DEBUG   SenderThread:7036 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 12:21:36,415 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 12:21:39,940 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 12:21:41,479 DEBUG   SenderThread:7036 [sender.py:send():379] send: exit
+2024-04-27 12:21:41,480 INFO    SenderThread:7036 [sender.py:send_exit():586] handling exit code: 1
+2024-04-27 12:21:41,480 INFO    SenderThread:7036 [sender.py:send_exit():588] handling runtime: 21
+2024-04-27 12:21:41,486 INFO    SenderThread:7036 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-27 12:21:41,488 INFO    SenderThread:7036 [sender.py:send_exit():594] send defer
+2024-04-27 12:21:41,488 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 12:21:41,488 INFO    HandlerThread:7036 [handler.py:handle_request_defer():172] handle defer: 0
+2024-04-27 12:21:41,488 DEBUG   SenderThread:7036 [sender.py:send_request():406] send_request: defer
+2024-04-27 12:21:41,488 INFO    SenderThread:7036 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-04-27 12:21:41,488 INFO    SenderThread:7036 [sender.py:transition_state():614] send defer: 1
+2024-04-27 12:21:41,489 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 12:21:41,489 INFO    HandlerThread:7036 [handler.py:handle_request_defer():172] handle defer: 1
+2024-04-27 12:21:41,489 DEBUG   SenderThread:7036 [sender.py:send_request():406] send_request: defer
+2024-04-27 12:21:41,490 INFO    SenderThread:7036 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-04-27 12:21:41,490 INFO    SenderThread:7036 [sender.py:transition_state():614] send defer: 2
+2024-04-27 12:21:41,490 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 12:21:41,490 INFO    HandlerThread:7036 [handler.py:handle_request_defer():172] handle defer: 2
+2024-04-27 12:21:41,490 INFO    HandlerThread:7036 [system_monitor.py:finish():203] Stopping system monitor
+2024-04-27 12:21:41,491 DEBUG   SystemMonitor:7036 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-04-27 12:21:41,491 INFO    HandlerThread:7036 [interfaces.py:finish():202] Joined cpu monitor
+2024-04-27 12:21:41,491 DEBUG   SystemMonitor:7036 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-04-27 12:21:41,492 INFO    HandlerThread:7036 [interfaces.py:finish():202] Joined disk monitor
+2024-04-27 12:21:41,492 DEBUG   SystemMonitor:7036 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-04-27 12:21:41,492 INFO    HandlerThread:7036 [interfaces.py:finish():202] Joined memory monitor
+2024-04-27 12:21:41,493 INFO    HandlerThread:7036 [interfaces.py:finish():202] Joined network monitor
+2024-04-27 12:21:41,494 DEBUG   SenderThread:7036 [sender.py:send_request():406] send_request: defer
+2024-04-27 12:21:41,494 INFO    SenderThread:7036 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-04-27 12:21:41,494 INFO    SenderThread:7036 [sender.py:transition_state():614] send defer: 3
+2024-04-27 12:21:41,494 DEBUG   SenderThread:7036 [sender.py:send():379] send: stats
+2024-04-27 12:21:41,494 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 12:21:41,495 INFO    HandlerThread:7036 [handler.py:handle_request_defer():172] handle defer: 3
+2024-04-27 12:21:41,495 DEBUG   SenderThread:7036 [sender.py:send_request():406] send_request: defer
+2024-04-27 12:21:41,495 INFO    SenderThread:7036 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-04-27 12:21:41,495 INFO    SenderThread:7036 [sender.py:transition_state():614] send defer: 4
+2024-04-27 12:21:41,496 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 12:21:41,496 INFO    HandlerThread:7036 [handler.py:handle_request_defer():172] handle defer: 4
+2024-04-27 12:21:41,496 DEBUG   SenderThread:7036 [sender.py:send_request():406] send_request: defer
+2024-04-27 12:21:41,496 INFO    SenderThread:7036 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-04-27 12:21:41,496 INFO    SenderThread:7036 [sender.py:transition_state():614] send defer: 5
+2024-04-27 12:21:41,496 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 12:21:41,498 INFO    HandlerThread:7036 [handler.py:handle_request_defer():172] handle defer: 5
+2024-04-27 12:21:41,498 DEBUG   SenderThread:7036 [sender.py:send():379] send: summary
+2024-04-27 12:21:41,498 INFO    SenderThread:7036 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-27 12:21:41,500 DEBUG   SenderThread:7036 [sender.py:send_request():406] send_request: defer
+2024-04-27 12:21:41,500 INFO    SenderThread:7036 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-04-27 12:21:41,500 INFO    SenderThread:7036 [sender.py:transition_state():614] send defer: 6
+2024-04-27 12:21:41,500 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 12:21:41,500 INFO    HandlerThread:7036 [handler.py:handle_request_defer():172] handle defer: 6
+2024-04-27 12:21:41,501 DEBUG   SenderThread:7036 [sender.py:send_request():406] send_request: defer
+2024-04-27 12:21:41,501 INFO    SenderThread:7036 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-04-27 12:21:41,505 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 12:21:41,817 INFO    SenderThread:7036 [sender.py:transition_state():614] send defer: 7
+2024-04-27 12:21:41,818 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 12:21:41,818 INFO    HandlerThread:7036 [handler.py:handle_request_defer():172] handle defer: 7
+2024-04-27 12:21:41,819 DEBUG   SenderThread:7036 [sender.py:send_request():406] send_request: defer
+2024-04-27 12:21:41,819 INFO    SenderThread:7036 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-04-27 12:21:41,877 INFO    Thread-16 :7036 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_122118-9t50ndmt\files\config.yaml
+2024-04-27 12:21:41,878 INFO    Thread-16 :7036 [dir_watcher.py:_on_file_created():271] file/dir created: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_122118-9t50ndmt\files\wandb-summary.json
+2024-04-27 12:21:42,484 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-27 12:21:43,884 INFO    SenderThread:7036 [sender.py:transition_state():614] send defer: 8
+2024-04-27 12:21:43,884 DEBUG   SenderThread:7036 [sender.py:send_request():406] send_request: poll_exit
+2024-04-27 12:21:43,884 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 12:21:43,885 INFO    HandlerThread:7036 [handler.py:handle_request_defer():172] handle defer: 8
+2024-04-27 12:21:43,886 DEBUG   SenderThread:7036 [sender.py:send_request():406] send_request: defer
+2024-04-27 12:21:43,886 INFO    SenderThread:7036 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-04-27 12:21:43,886 INFO    SenderThread:7036 [job_builder.py:build():318] Attempting to build job artifact
+2024-04-27 12:21:43,887 INFO    SenderThread:7036 [job_builder.py:_get_source_type():455] is repo sourced job
+2024-04-27 12:21:43,893 INFO    Thread-16 :7036 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_122118-9t50ndmt\files\output.log
+2024-04-27 12:21:44,463 INFO    SenderThread:7036 [job_builder.py:build():431] adding wandb-job metadata file
+2024-04-27 12:21:44,499 INFO    SenderThread:7036 [sender.py:transition_state():614] send defer: 9
+2024-04-27 12:21:44,501 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 12:21:44,501 INFO    HandlerThread:7036 [handler.py:handle_request_defer():172] handle defer: 9
+2024-04-27 12:21:44,502 DEBUG   SenderThread:7036 [sender.py:send():379] send: artifact
+2024-04-27 12:21:44,508 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-27 12:21:46,070 INFO    SenderThread:7036 [sender.py:send_artifact():1468] sent artifact job-https___github.com_LeverImmy_Introduction-to-Artificial-Intelligence.git_Classification_src_main.py - {'id': 'QXJ0aWZhY3Q6ODEyNTEwMTc5', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE2NzMwNTcwNQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6ODEyNTEwMTc5', 'versionIndex': 1}}}
+2024-04-27 12:21:46,070 DEBUG   SenderThread:7036 [sender.py:send_request():406] send_request: defer
+2024-04-27 12:21:46,070 INFO    SenderThread:7036 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-04-27 12:21:46,071 INFO    SenderThread:7036 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-04-27 12:21:46,972 INFO    SenderThread:7036 [dir_watcher.py:finish():388] scan: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_122118-9t50ndmt\files
+2024-04-27 12:21:46,973 INFO    SenderThread:7036 [dir_watcher.py:finish():402] scan save: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_122118-9t50ndmt\files\config.yaml config.yaml
+2024-04-27 12:21:46,973 INFO    SenderThread:7036 [dir_watcher.py:finish():402] scan save: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_122118-9t50ndmt\files\output.log output.log
+2024-04-27 12:21:46,978 INFO    SenderThread:7036 [dir_watcher.py:finish():402] scan save: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_122118-9t50ndmt\files\requirements.txt requirements.txt
+2024-04-27 12:21:46,983 INFO    SenderThread:7036 [dir_watcher.py:finish():402] scan save: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_122118-9t50ndmt\files\wandb-metadata.json wandb-metadata.json
+2024-04-27 12:21:46,984 INFO    SenderThread:7036 [dir_watcher.py:finish():402] scan save: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_122118-9t50ndmt\files\wandb-summary.json wandb-summary.json
+2024-04-27 12:21:46,985 INFO    SenderThread:7036 [sender.py:transition_state():614] send defer: 10
+2024-04-27 12:21:46,988 DEBUG   SenderThread:7036 [sender.py:send_request():406] send_request: poll_exit
+2024-04-27 12:21:46,989 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 12:21:46,993 INFO    HandlerThread:7036 [handler.py:handle_request_defer():172] handle defer: 10
+2024-04-27 12:21:46,995 DEBUG   SenderThread:7036 [sender.py:send_request():406] send_request: defer
+2024-04-27 12:21:46,995 INFO    SenderThread:7036 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-04-27 12:21:46,996 INFO    SenderThread:7036 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-27 12:21:47,530 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-27 12:21:47,531 DEBUG   SenderThread:7036 [sender.py:send_request():406] send_request: poll_exit
+2024-04-27 12:21:47,756 INFO    wandb-upload_0:7036 [upload_job.py:push():131] Uploaded file E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_122118-9t50ndmt\files\config.yaml
+2024-04-27 12:21:48,541 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-27 12:21:48,546 DEBUG   SenderThread:7036 [sender.py:send_request():406] send_request: poll_exit
+2024-04-27 12:21:49,468 INFO    wandb-upload_2:7036 [upload_job.py:push():131] Uploaded file E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_122118-9t50ndmt\files\requirements.txt
+2024-04-27 12:21:49,553 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-27 12:21:49,554 DEBUG   SenderThread:7036 [sender.py:send_request():406] send_request: poll_exit
+2024-04-27 12:21:49,910 INFO    wandb-upload_3:7036 [upload_job.py:push():131] Uploaded file E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_122118-9t50ndmt\files\wandb-summary.json
+2024-04-27 12:21:49,910 INFO    wandb-upload_1:7036 [upload_job.py:push():131] Uploaded file E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_122118-9t50ndmt\files\output.log
+2024-04-27 12:21:50,125 INFO    Thread-15 (_thread_body):7036 [sender.py:transition_state():614] send defer: 11
+2024-04-27 12:21:50,127 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 12:21:50,127 INFO    HandlerThread:7036 [handler.py:handle_request_defer():172] handle defer: 11
+2024-04-27 12:21:50,128 DEBUG   SenderThread:7036 [sender.py:send_request():406] send_request: defer
+2024-04-27 12:21:50,128 INFO    SenderThread:7036 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-04-27 12:21:50,128 INFO    SenderThread:7036 [file_pusher.py:join():178] waiting for file pusher
+2024-04-27 12:21:50,129 INFO    SenderThread:7036 [sender.py:transition_state():614] send defer: 12
+2024-04-27 12:21:50,130 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 12:21:50,130 INFO    HandlerThread:7036 [handler.py:handle_request_defer():172] handle defer: 12
+2024-04-27 12:21:50,130 DEBUG   SenderThread:7036 [sender.py:send_request():406] send_request: defer
+2024-04-27 12:21:50,130 INFO    SenderThread:7036 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-04-27 12:21:50,130 INFO    SenderThread:7036 [file_stream.py:finish():614] file stream finish called
+2024-04-27 12:21:50,361 INFO    SenderThread:7036 [file_stream.py:finish():618] file stream finish is done
+2024-04-27 12:21:50,362 INFO    SenderThread:7036 [sender.py:transition_state():614] send defer: 13
+2024-04-27 12:21:50,362 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 12:21:50,362 INFO    HandlerThread:7036 [handler.py:handle_request_defer():172] handle defer: 13
+2024-04-27 12:21:50,363 DEBUG   SenderThread:7036 [sender.py:send_request():406] send_request: defer
+2024-04-27 12:21:50,363 INFO    SenderThread:7036 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-04-27 12:21:50,363 INFO    SenderThread:7036 [sender.py:transition_state():614] send defer: 14
+2024-04-27 12:21:50,364 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 12:21:50,365 DEBUG   SenderThread:7036 [sender.py:send():379] send: final
+2024-04-27 12:21:50,365 DEBUG   SenderThread:7036 [sender.py:send():379] send: footer
+2024-04-27 12:21:50,365 INFO    HandlerThread:7036 [handler.py:handle_request_defer():172] handle defer: 14
+2024-04-27 12:21:50,366 DEBUG   SenderThread:7036 [sender.py:send_request():406] send_request: defer
+2024-04-27 12:21:50,366 INFO    SenderThread:7036 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-04-27 12:21:50,367 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-27 12:21:50,367 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-27 12:21:50,368 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: server_info
+2024-04-27 12:21:50,368 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: get_summary
+2024-04-27 12:21:50,368 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: sampled_history
+2024-04-27 12:21:50,368 DEBUG   SenderThread:7036 [sender.py:send_request():406] send_request: poll_exit
+2024-04-27 12:21:50,369 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 12:21:50,369 DEBUG   SenderThread:7036 [sender.py:send_request():406] send_request: poll_exit
+2024-04-27 12:21:50,370 DEBUG   SenderThread:7036 [sender.py:send_request():406] send_request: server_info
+2024-04-27 12:21:50,627 INFO    MainThread:7036 [wandb_run.py:_footer_history_summary_info():3936] rendering history
+2024-04-27 12:21:50,627 INFO    MainThread:7036 [wandb_run.py:_footer_history_summary_info():3968] rendering summary
+2024-04-27 12:21:50,627 INFO    MainThread:7036 [wandb_run.py:_footer_sync_info():3895] logging synced files
+2024-04-27 12:21:50,628 DEBUG   HandlerThread:7036 [handler.py:handle_request():146] handle_request: shutdown
+2024-04-27 12:21:50,628 INFO    HandlerThread:7036 [handler.py:finish():866] shutting down handler
+2024-04-27 12:21:51,373 INFO    WriterThread:7036 [datastore.py:close():296] close: E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\wandb\run-20240427_122118-9t50ndmt\run-9t50ndmt.wandb
+2024-04-27 12:21:51,636 INFO    SenderThread:7036 [sender.py:finish():1546] shutting down sender
+2024-04-27 12:21:51,637 INFO    SenderThread:7036 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-27 12:21:51,638 INFO    SenderThread:7036 [file_pusher.py:join():178] waiting for file pusher

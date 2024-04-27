@@ -1,0 +1,19 @@
+
+  0%|          | 0/10 [00:18<?, ?it/s]
+Traceback (most recent call last):
+  File "E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\main.py", line 159, in <module>
+    train_loss, train_acc, train_f_score = train(train_dataloader)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\main.py", line 138, in train
+    return eval_model(dataloader, is_training=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Codes\Projects\Introduction-to-Artificial-Intelligence\Classification\src\main.py", line 112, in eval_model
+    output = model(x)
+             ^^^^^^^^
+  File "D:\ProgramFiles\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ProgramFiles\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BerT.forward() missing 1 required positional argument: 'attention_mask'

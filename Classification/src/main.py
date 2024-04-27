@@ -8,9 +8,9 @@ from torch.utils.data import DataLoader, TensorDataset
 from tqdm import tqdm
 import wandb
 
-from para import Hyperparameter
+from models import RNN_LSTM, RNN_GRU, CNN, MLP, BerT
+from para import Hyperparameter, DEVICE
 from utils import load_data, enumerateWord
-from models import RNN_LSTM, RNN_GRU, CNN, MLP
 
 
 config = Hyperparameter()
@@ -22,15 +22,15 @@ def get_data():
     val_contents, val_labels = load_data("../Dataset/validation.txt", max_length, word2id)
     test_contents, test_labels = load_data("../Dataset/test.txt", max_length, word2id)
     train_dataset = TensorDataset(
-        torch.from_numpy(train_contents).type(torch.float),
+        torch.from_numpy(train_contents).type(torch.long),
         torch.from_numpy(train_labels).type(torch.long),
     )
     val_dataset = TensorDataset(
-        torch.from_numpy(val_contents).type(torch.float),
+        torch.from_numpy(val_contents).type(torch.long),
         torch.from_numpy(val_labels).type(torch.long),
     )
     test_dataset = TensorDataset(
-        torch.from_numpy(test_contents).type(torch.float),
+        torch.from_numpy(test_contents).type(torch.long),
         torch.from_numpy(test_labels).type(torch.long),
     )
     return (DataLoader(dataset=train_dataset, batch_size=batch_size, shuffle=True, num_workers=2),
@@ -54,14 +54,14 @@ def parser_data():
         dest="epoch",
         type=int,
         default=10,
-        help="Epoch"
+        help="Epoch."
     )
     parser.add_argument(
         "-m",
         "--max_length",
         dest="max_length",
         type=int,
-        default=120,
+        default=50,
         help="The maximum length of the sequence.",
     )
     parser.add_argument(
@@ -70,15 +70,15 @@ def parser_data():
         dest="batch_size",
         type=int,
         default=50,
-        help="batch size"
+        help="Batch size."
     )
     parser.add_argument(
         "-c",
         "--choice",
         dest="choice",
         type=str,
-        default="CNN",
-        help="Choice of model: CNN, RNN_LTSM, RNN_GRU, MLP.",
+        default="BerT",
+        help="Choice of model: CNN, RNN_LTSM, RNN_GRU, MLP, BerT.",
     )
     args = parser.parse_args()
     selection = args.choice
@@ -90,8 +90,10 @@ def parser_data():
         selected_model = RNN_GRU(config).to(DEVICE)
     elif selection == "MLP":
         selected_model = MLP(config).to(DEVICE)
+    elif selection == "BerT":
+        selected_model = BerT(config).to(DEVICE)
     else:
-        print("Please select one of the following: CNN, RNN_LTSM, RNN_GRU, MLP.")
+        print("Please select one of the following: CNN, RNN_LTSM, RNN_GRU, MLP, BerT.")
         exit(1)
     return args.learning_rate, args.epoch, args.max_length, args.batch_size, selected_model
 
@@ -107,7 +109,7 @@ def eval_model(dataloader, is_training):
         output = model(x)
         batch_loss = criterion(output, y)
         loss += batch_loss.item()
-        correct += (output.argmax(1) == y).to(torch.float32).sum().item()
+        correct += (output.argmax(1) == y).float().sum().item()
         count += len(x)
         full_true.extend(y.cpu().numpy().tolist())
         full_pred.extend(output.argmax(1).cpu().numpy().tolist())
@@ -139,7 +141,6 @@ def valid_and_test(dataloader):
 
 
 if __name__ == "__main__":
-    DEVICE = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     learning_rate, epoch, max_length, batch_size, model = parser_data()
     train_dataloader, val_dataloader, test_dataloader = get_data()
 
@@ -148,7 +149,7 @@ if __name__ == "__main__":
     scheduler = StepLR(optimizer, step_size=5)
 
     wandb.init(project=f"Classification", name=f"{model.__name__}", entity="leverimmy")
-    wandb.config = {"learning_rate": 0.001, "epochs": 100, "batch_size": 50}
+    wandb.config = {"learning_rate": learning_rate, "epoch": epoch, "max_length": max_length, "batch_size": batch_size}
 
     for each in tqdm(range(1, epoch + 1)):
         train_loss, train_acc, train_f_score = train(train_dataloader)
@@ -161,7 +162,7 @@ if __name__ == "__main__":
                 "train_f_score": train_f_score,
                 "val_loss": val_loss,
                 "val_acc": val_acc,
-                "val_f_score1": val_f_score,
+                "val_f_score": val_f_score,
                 "test_loss": test_loss,
                 "test_acc": test_acc,
                 "test_f_score": test_f_score,

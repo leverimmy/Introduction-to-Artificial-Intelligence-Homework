@@ -1,0 +1,45 @@
+{
+    "os": "Windows-11-10.0.22631-SP0",
+    "python": "3.12.0",
+    "heartbeatAt": "2024-04-27T04:21:20.380104",
+    "startedAt": "2024-04-27T04:21:18.273540",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "E:\\Codes\\Projects\\Introduction-to-Artificial-Intelligence\\Classification\\src\\main.py",
+    "codePathLocal": "main.py",
+    "codePath": "Classification\\src\\main.py",
+    "git": {
+        "remote": "https://github.com/LeverImmy/Introduction-to-Artificial-Intelligence.git",
+        "commit": "363ff67ba5f644ee7d1335b3b41391ef22b125d3"
+    },
+    "email": "506503360@qq.com",
+    "root": "E:/Codes/Projects/Introduction-to-Artificial-Intelligence",
+    "host": "Worptop",
+    "username": "50650",
+    "executable": "D:\\ProgramFiles\\Python\\Python312\\python.exe",
+    "cpu_count": 12,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 1504.0,
+        "min": 0.0,
+        "max": 1900.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1504.0,
+            "min": 0.0,
+            "max": 1900.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 149.99999618530273,
+            "used": 36.02278137207031
+        }
+    },
+    "memory": {
+        "total": 15.730705261230469
+    }
+}
