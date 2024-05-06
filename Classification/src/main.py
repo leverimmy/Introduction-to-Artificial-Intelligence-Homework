@@ -8,7 +8,7 @@ from torch.utils.data import DataLoader, TensorDataset
 from tqdm import tqdm
 import wandb
 
-from models import RNN_LSTM, RNN_GRU, CNN, MLP, BerT
+from models import RNN_LSTM, RNN_GRU, CNN, MLP, BERT
 from para import Hyperparameter, DEVICE
 from utils import load_data, enumerateWord
 
@@ -78,7 +78,7 @@ def parser_data():
         dest="choice",
         type=str,
         default="CNN",
-        help="Choice of model: CNN, RNN_LTSM, RNN_GRU, MLP, BerT.",
+        help="Choice of model: CNN, RNN_LTSM, RNN_GRU, MLP, BERT.",
     )
     args = parser.parse_args()
     selection = args.choice
@@ -90,39 +90,37 @@ def parser_data():
         selected_model = RNN_GRU(config).to(DEVICE)
     elif selection == "MLP":
         selected_model = MLP(config).to(DEVICE)
-    elif selection == "BerT":
-        selected_model = BerT(config).to(DEVICE)
+    elif selection == "BERT":
+        selected_model = BERT(config).to(DEVICE)
     else:
-        print("Please select one of the following: CNN, RNN_LTSM, RNN_GRU, MLP, BerT.")
+        print("Please select one of the following: CNN, RNN_LTSM, RNN_GRU, MLP, BERT.")
         exit(1)
     return args.learning_rate, args.epoch, args.max_length, args.batch_size, selected_model
 
 
 def eval_model(dataloader, is_training):
     loss, acc = 0.0, 0.0
-    count, correct = 0, 0
-    full_true = []
-    full_pred = []
+    result, total = 0, 0
+    true_labels, predicted_labels = [], []
 
     for (x, y) in dataloader:
         x, y = x.to(DEVICE), y.to(DEVICE)
         output = model(x)
         batch_loss = criterion(output, y)
         loss += batch_loss.item()
-        correct += (output.argmax(1) == y).float().sum().item()
-        count += len(x)
-        full_true.extend(y.cpu().numpy().tolist())
-        full_pred.extend(output.argmax(1).cpu().numpy().tolist())
+        result += (output.argmax(1) == y).float().sum().item()
+        total += len(x)
+        true_labels.extend(y.cpu().numpy().tolist())
+        predicted_labels.extend(output.argmax(1).cpu().numpy().tolist())
 
         if is_training:
             optimizer.zero_grad()
             batch_loss.backward()
             optimizer.step()
 
-    loss *= dataloader.batch_size
-    loss /= len(dataloader.dataset)
-    acc = correct / count
-    f_score = f1_score(np.array(full_true), np.array(full_pred), average="binary")
+    loss *= dataloader.batch_size / len(dataloader.dataset)
+    acc = result / total
+    f_score = f1_score(true_labels, predicted_labels, average="binary")
 
     if is_training:
         scheduler.step()
@@ -148,28 +146,28 @@ if __name__ == "__main__":
     criterion = nn.CrossEntropyLoss()
     scheduler = StepLR(optimizer, step_size=5)
 
-    wandb.init(project=f"Classification", name=f"{model.__name__}", entity="leverimmy")
-    wandb.config = {"learning_rate": learning_rate, "epoch": epoch, "max_length": max_length, "batch_size": batch_size}
+    # wandb.init(project=f"Classification", name=f"{model.__name__}", entity="leverimmy")
+    # wandb.config = {"learning_rate": learning_rate, "epoch": epoch, "max_length": max_length, "batch_size": batch_size}
 
-    for each in tqdm(range(1, epoch + 1)):
+    for it in tqdm(range(1, epoch + 1)):
         train_loss, train_acc, train_f_score = train(train_dataloader)
         val_loss, val_acc, val_f_score = valid_and_test(val_dataloader)
         test_loss, test_acc, test_f_score = valid_and_test(test_dataloader)
-        wandb.log(
-            {
-                "train_loss": train_loss,
-                "train_acc": train_acc,
-                "train_f_score": train_f_score,
-                "val_loss": val_loss,
-                "val_acc": val_acc,
-                "val_f_score": val_f_score,
-                "test_loss": test_loss,
-                "test_acc": test_acc,
-                "test_f_score": test_f_score,
-            }
-        )
+        # wandb.log(
+        #     {
+        #         "train_loss": train_loss,
+        #         "train_acc": train_acc,
+        #         "train_f_score": train_f_score,
+        #         "val_loss": val_loss,
+        #         "val_acc": val_acc,
+        #         "val_f_score": val_f_score,
+        #         "test_loss": test_loss,
+        #         "test_acc": test_acc,
+        #         "test_f_score": test_f_score,
+        #     }
+        # )
         print(
-            f'Epoch {each}, train_loss: {train_loss:.4f}, train_acc: {train_acc:.4f}, '
+            f'Epoch {it}, train_loss: {train_loss:.4f}, train_acc: {train_acc:.4f}, '
             f'val_loss: {val_loss:.4f}, val_acc: {val_acc:.4f}, '
             f'test_loss: {test_loss:.4f}, test_acc: {test_acc:.4f}'
         )

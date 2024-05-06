@@ -7,7 +7,7 @@ if __name__ == '__main__':
     os.system('python main.py -c RNN_LSTM')
     os.system('python main.py -c RNN_GRU')
     os.system('python main.py -c MLP')
-    os.system('python main.py -c BerT')
+    os.system('python main.py -c BERT')
 
     # 比较参数：learning rate
     rates = [1e-4, 1e-3, 1e-2, 1e-1, 1]

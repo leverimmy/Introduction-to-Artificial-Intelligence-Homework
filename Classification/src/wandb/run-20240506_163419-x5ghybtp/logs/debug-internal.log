@@ -1,0 +1,103 @@
+2024-05-06 16:34:19,722 INFO    StreamThr :79565 [internal.py:wandb_internal():86] W&B internal server running at pid: 79565, started at: 2024-05-06 16:34:19.721646
+2024-05-06 16:34:19,725 DEBUG   HandlerThread:79565 [handler.py:handle_request():146] handle_request: status
+2024-05-06 16:34:19,730 INFO    WriterThread:79565 [datastore.py:open_for_write():87] open: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240506_163419-x5ghybtp/run-x5ghybtp.wandb
+2024-05-06 16:34:19,731 DEBUG   SenderThread:79565 [sender.py:send():379] send: header
+2024-05-06 16:34:19,738 DEBUG   SenderThread:79565 [sender.py:send():379] send: run
+2024-05-06 16:34:23,291 INFO    SenderThread:79565 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/home/leverimmy/anaconda3/lib/python3.11/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leverimmy/anaconda3/lib/python3.11/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leverimmy/anaconda3/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/leverimmy/anaconda3/lib/python3.11/site-packages/urllib3/connectionpool.py", line 714, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/leverimmy/anaconda3/lib/python3.11/site-packages/urllib3/connectionpool.py", line 403, in _make_request
+    self._validate_conn(conn)
+  File "/home/leverimmy/anaconda3/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1053, in _validate_conn
+    conn.connect()
+  File "/home/leverimmy/anaconda3/lib/python3.11/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/leverimmy/anaconda3/lib/python3.11/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fd8b418a310>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/leverimmy/anaconda3/lib/python3.11/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/leverimmy/anaconda3/lib/python3.11/site-packages/urllib3/connectionpool.py", line 798, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/leverimmy/anaconda3/lib/python3.11/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fd8b418a310>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/leverimmy/anaconda3/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leverimmy/anaconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 369, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leverimmy/anaconda3/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leverimmy/anaconda3/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leverimmy/anaconda3/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leverimmy/anaconda3/lib/python3.11/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leverimmy/anaconda3/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leverimmy/anaconda3/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leverimmy/anaconda3/lib/python3.11/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fd8b418a310>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2024-05-06 16:34:24,739 DEBUG   HandlerThread:79565 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-06 16:34:29,741 DEBUG   HandlerThread:79565 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-06 16:34:34,742 DEBUG   HandlerThread:79565 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-06 16:34:39,744 DEBUG   HandlerThread:79565 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-06 16:34:44,746 DEBUG   HandlerThread:79565 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-06 16:34:49,747 DEBUG   HandlerThread:79565 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-06 16:34:54,749 DEBUG   HandlerThread:79565 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-06 16:34:59,751 DEBUG   HandlerThread:79565 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-06 16:35:04,752 DEBUG   HandlerThread:79565 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-06 16:35:09,754 DEBUG   HandlerThread:79565 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-06 16:35:14,756 DEBUG   HandlerThread:79565 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-06 16:35:19,757 DEBUG   HandlerThread:79565 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-06 16:35:24,759 DEBUG   HandlerThread:79565 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-06 16:35:29,761 DEBUG   HandlerThread:79565 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-06 16:35:34,762 DEBUG   HandlerThread:79565 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-06 16:35:39,764 DEBUG   HandlerThread:79565 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-06 16:35:44,766 DEBUG   HandlerThread:79565 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-06 16:35:49,767 DEBUG   HandlerThread:79565 [handler.py:handle_request():146] handle_request: cancel
+2024-05-06 16:35:49,768 DEBUG   HandlerThread:79565 [handler.py:handle_request():146] handle_request: cancel
+2024-05-06 16:35:49,768 DEBUG   SenderThread:79565 [sender.py:send():388] Record cancelled: run
+2024-05-06 16:35:49,769 DEBUG   HandlerThread:79565 [handler.py:handle_request():146] handle_request: status_report
+2024-05-06 16:35:49,790 DEBUG   HandlerThread:79565 [handler.py:handle_request():146] handle_request: shutdown
+2024-05-06 16:35:49,791 INFO    HandlerThread:79565 [handler.py:finish():866] shutting down handler
+2024-05-06 16:35:50,769 INFO    SenderThread:79565 [sender.py:finish():1546] shutting down sender
+2024-05-06 16:35:50,769 INFO    WriterThread:79565 [datastore.py:close():296] close: /home/leverimmy/documents/Introduction-to-Artificial-Intelligence/Classification/src/wandb/run-20240506_163419-x5ghybtp/run-x5ghybtp.wandb
