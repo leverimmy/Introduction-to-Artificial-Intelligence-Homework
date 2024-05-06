@@ -69,7 +69,7 @@ def parser_data():
         "--batch-size",
         dest="batch_size",
         type=int,
-        default=50,
+        default=65,
         help="Batch size."
     )
     parser.add_argument(
