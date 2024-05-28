@@ -235,7 +235,7 @@ $$
 $$
 f(i, w) = \max_{v \in \sigma(w)}(f(i - 1, v) + \text{cost}(v, w)).
 $$
-![Viterbi 算法](./viterbi.png)
+![Viterbi 算法](./assets/viterbi.png)
 
 题目所求即为 $w_0$ 到 $w_{n+1}$ 的路径最小值，即为 $f(n+1, w_{n+1})$。
 

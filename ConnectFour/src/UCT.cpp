@@ -8,7 +8,7 @@ UCT::UCT(int current_h, int current_w, const Point& current_ban, int **current_b
 
     for (int i = 0; i < w; i++) {
         if (i <= w / 2)
-            weight[i] = i + 1;
+            weight[i] = (i + 1) * (i + 1);
         else
             weight[i] = weight[w - i - 1];
         total_weight += weight[i];

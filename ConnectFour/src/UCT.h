@@ -9,7 +9,7 @@
 #include <vector>
 using namespace std;
 
-constexpr double PARAMETER = 0.707;
+constexpr double PARAMETER = 0.75;
 constexpr double TIME_LIMIT = 2.0 * CLOCKS_PER_SEC;
 
 class UCT {
