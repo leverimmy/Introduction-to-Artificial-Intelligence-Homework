@@ -7,3 +7,12 @@ Pinyin/Hand-in/data/*
 # Classification
 Classification/src/__pycache__/
 Classification/src/wandb/
+
+# ConnectFour
+ConnectFour/report/*.aux
+ConnectFour/report/*.fdb_latexmk
+ConnectFour/report/*.fls
+ConnectFour/report/*.log
+ConnectFour/report/*.out
+ConnectFour/report/*.synctex.gz
+ConnectFour/report/*.toc
