@@ -1,6 +1,6 @@
 # Introduction-to-Artificial-Intelligence-Homework
 
-Repository for the codes of homework of Introduction to Artificial Intelligence, Spring 2024
+Repository for the codes of the homework of Introduction to Artificial Intelligence, Spring 2024
 
 |      作业名称       |      目录      |              知识点              |
 | :-----------------: | :------------: | :------------------------------: |
